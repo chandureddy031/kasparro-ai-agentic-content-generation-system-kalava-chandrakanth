@@ -442,251 +442,271 @@
     </div>
 
     <script>
-        let currentData = null;
-        let currentOperation = null;
-        let viewMode = 'ui';
+    let currentData = null;
+    let currentOperation = null;
+    let viewMode = 'ui';
 
-        async function analyze(operation) {
-            const input = document.getElementById('productInput').value.trim();
-            const loading = document.getElementById('loading');
-            const results = document.getElementById('results');
-            const error = document.getElementById('error');
+    async function analyze(operation) {
+        const input = document.getElementById('productInput').value.trim();
+        const loading = document.getElementById('loading');
+        const results = document.getElementById('results');
+        const error = document.getElementById('error');
 
-            if (!input) {
-                showError('Please enter product data');
-                return;
+        if (!input) {
+            showError('Please enter product data');
+            return;
+        }
+
+        loading.style.display = 'block';
+        results.style.display = 'none';
+        error.style.display = 'none';
+
+        try {
+            const response = await fetch('/api/analyze', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    product_data: input,
+                    operation: operation
+                })
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || 'Something went wrong');
             }
 
-            loading.style.display = 'block';
-            results.style.display = 'none';
-            error.style.display = 'none';
+            currentData = data;
+            currentOperation = operation;
+            viewMode = 'ui';
 
-            try {
-                const response = await fetch('/api/analyze', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        product_data: input,
-                        operation: operation
-                    })
-                });
+            loading.style.display = 'none';
+            displayResults(data, operation);
 
-                const data = await response.json();
+        } catch (err) {
+            loading.style.display = 'none';
+            showError(err.message);
+        }
+    }
 
-                if (!response.ok) {
-                    throw new Error(data.error || 'Something went wrong');
-                }
+    function toggleView() {
+        viewMode = viewMode === 'ui' ? 'json' : 'ui';
+        displayResults(currentData, currentOperation);
+    }
 
-                currentData = data;
-                currentOperation = operation;
-                viewMode = 'ui';
+    function displayResults(data, operation) {
+        const results = document.getElementById('results');
+        results.style.display = 'block';
 
-                loading.style.display = 'none';
-                displayResults(data, operation);
+        let html = '<div class="view-toggle">';
+        html += '<button class="toggle-btn" onclick="toggleView()">';
+        html += viewMode === 'ui' ? 'Switch to JSON View' : 'Switch to UI View';
+        html += '</button></div>';
 
-            } catch (err) {
-                loading.style.display = 'none';
-                showError(err.message);
+        if (viewMode === 'json') {
+            html += renderJSON(data, operation);
+        } else {
+            if (operation === 'description') {
+                html += renderDescription(data);
+            } else if (operation === 'comparison') {
+                html += renderComparison(data);
+            } else if (operation === 'faq') {
+                html += renderFAQ(data);
             }
         }
 
-        function toggleView() {
-            viewMode = viewMode === 'ui' ? 'json' : 'ui';
-            displayResults(currentData, currentOperation);
-        }
+        results.innerHTML = html;
+    }
 
-        function displayResults(data, operation) {
-            const results = document.getElementById('results');
-            results.style.display = 'block';
+    function renderJSON(data, operation) {
+        const operationTitles = {
+            'description': 'Product Description',
+            'comparison': 'Product Comparison',
+            'faq': 'Frequently Asked Questions'
+        };
 
-            let html = '<div class="view-toggle">';
-            html += '<button class="toggle-btn" onclick="toggleView()">';
-            html += viewMode === 'ui' ? 'Switch to JSON View' : 'Switch to UI View';
-            html += '</button></div>';
+        return `
+            <div class="result-header">${operationTitles[operation]} - JSON Output</div>
+            <div class="result-content">
+                <div class="json-output">${JSON.stringify(data, null, 2)}</div>
+            </div>
+        `;
+    }
 
-            if (viewMode === 'json') {
-                html += renderJSON(data, operation);
-            } else {
-                if (operation === 'description') {
-                    html += renderDescription(data);
-                } else if (operation === 'comparison') {
-                    html += renderComparison(data);
-                } else if (operation === 'faq') {
-                    html += renderFAQ(data);
-                }
-            }
+    function renderDescription(data) {
+        const product = data.product_data;
+        const desc = data.description;
 
-            results.innerHTML = html;
-        }
-
-        function renderJSON(data, operation) {
-            const operationTitles = {
-                'description': 'Product Description',
-                'comparison': 'Product Comparison',
-                'faq': 'Frequently Asked Questions'
-            };
-
-            return `
-                <div class="result-header">${operationTitles[operation]} - JSON Output</div>
-                <div class="result-content">
-                    <div class="json-output">${JSON.stringify(data, null, 2)}</div>
+        return `
+            <div class="result-header">Product Description</div>
+            <div class="result-content">
+                <div class="product-info">
+                    <h3>${product.product_name || 'Product'}</h3>
+                    <p><strong>Price:</strong> ${product.price || product.price_in_inr || 'N/A'}</p>
+                    ${product.concentration ? `<p><strong>Concentration:</strong> ${product.concentration}</p>` : ''}
+                    ${product.key_ingredients ? `<p><strong>Key Ingredients:</strong> ${Array.isArray(product.key_ingredients) ? product.key_ingredients.join(', ') : product.key_ingredients}</p>` : ''}
                 </div>
-            `;
-        }
-
-        function renderDescription(data) {
-            const product = data.product_data;
-            const desc = data.description;
-
-            return `
-                <div class="result-header">Product Description</div>
-                <div class="result-content">
-                    <div class="product-info">
-                        <h3>${product.product_name || 'Product'}</h3>
-                        <p><strong>Price:</strong> ${product.price || product.price_in_inr || 'N/A'}</p>
-                        ${product.concentration ? `<p><strong>Concentration:</strong> ${product.concentration}</p>` : ''}
-                        ${product.key_ingredients ? `<p><strong>Key Ingredients:</strong> ${Array.isArray(product.key_ingredients) ? product.key_ingredients.join(', ') : product.key_ingredients}</p>` : ''}
-                    </div>
-                    <div class="product-info">
-                        <h3>Description</h3>
-                        ${desc.title ? `<h4>${desc.title}</h4>` : ''}
-                        ${desc.description ? `<p>${desc.description}</p>` : ''}
-                        ${desc.highlights ? `<div><strong>Highlights:</strong><br>${Array.isArray(desc.highlights) ? desc.highlights.map(h => `• ${h}`).join('<br>') : desc.highlights}</div>` : ''}
-                    </div>
+                <div class="product-info">
+                    <h3>Description</h3>
+                    ${desc.title ? `<h4>${desc.title}</h4>` : ''}
+                    ${desc.description ? `<p>${desc.description}</p>` : ''}
+                    ${desc.highlights ? `<div><strong>Highlights:</strong><br>${Array.isArray(desc.highlights) ? desc.highlights.map(h => `• ${h}`).join('<br>') : desc.highlights}</div>` : ''}
                 </div>
-            `;
-        }
+            </div>
+        `;
+    }
 
-        function renderComparison(data) {
-            const original = data.product_data;
-            const comparison = data.comparison;
-            const similar = comparison.similar_products || [];
+    function renderComparison(data) {
+        const original = data.product_data;
+        const comparison = data.comparison;
+        const similar = comparison.similar_products || [];
 
-            let html = `
-                <div class="result-header">Product Comparison</div>
-                <div class="result-content">
-                    <div class="comparison-grid">
-            `;
+        let html = `
+            <div class="result-header">Product Comparison</div>
+            <div class="result-content">
+                <div class="comparison-grid">
+        `;
 
+        html += `
+            <div class="product-card original">
+                <span class="card-badge badge-original">YOUR PRODUCT</span>
+                <h4>${original.product_name}</h4>
+                <div class="price">${original.price || original.price_in_inr || 'N/A'}</div>
+                <div class="features">
+                    ${original.concentration ? `<strong>Concentration:</strong> ${original.concentration}<br>` : ''}
+                    <strong>Ingredients:</strong> ${Array.isArray(original.key_ingredients) ? original.key_ingredients.join(', ') : original.key_ingredients || 'N/A'}<br>
+                    <strong>Benefits:</strong> ${Array.isArray(original.benefits) ? original.benefits.join(', ') : original.benefits || 'N/A'}
+                </div>
+            </div>
+        `;
+
+        similar.forEach(product => {
             html += `
-                <div class="product-card original">
-                    <span class="card-badge badge-original">YOUR PRODUCT</span>
-                    <h4>${original.product_name}</h4>
-                    <div class="price">${original.price || original.price_in_inr || 'N/A'}</div>
-                    <div class="features">
-                        ${original.concentration ? `<strong>Concentration:</strong> ${original.concentration}<br>` : ''}
-                        <strong>Ingredients:</strong> ${Array.isArray(original.key_ingredients) ? original.key_ingredients.join(', ') : original.key_ingredients || 'N/A'}<br>
-                        <strong>Benefits:</strong> ${Array.isArray(original.benefits) ? original.benefits.join(', ') : original.benefits || 'N/A'}
-                    </div>
+                <div class="product-card alternative">
+                    <span class="card-badge badge-alternative">ALTERNATIVE</span>
+                    <div class="brand">${product.brand}</div>
+                    <h4>${product.product_name}</h4>
+                    <div class="price">${product.price}</div>
+                    <div class="rating">★ ${product.rating}/5</div>
+                    <div class="features">${product.key_features}</div>
+                    <div class="diff"><strong>Differentiator:</strong> ${product.differentiators}</div>
                 </div>
             `;
+        });
 
-            similar.forEach(product => {
-                html += `
-                    <div class="product-card alternative">
-                        <span class="card-badge badge-alternative">ALTERNATIVE</span>
-                        <div class="brand">${product.brand}</div>
-                        <h4>${product.product_name}</h4>
-                        <div class="price">${product.price}</div>
-                        <div class="rating">★ ${product.rating}/5</div>
-                        <div class="features">${product.key_features}</div>
-                        <div class="diff"><strong>Differentiator:</strong> ${product.differentiators}</div>
-                    </div>
-                `;
-            });
+        html += '</div>';
 
-            html += '</div>';
+        html += renderComparisonSummary(original, similar);
 
-            html += renderComparisonSummary(original, similar);
+        html += '</div>';
 
-            html += '</div>';
+        return html;
+    }
 
-            return html;
+    function renderComparisonSummary(original, alternatives) {
+        if (!alternatives || alternatives.length === 0) return '';
+
+        let html = `
+            <div class="comparison-summary">
+                <h3>Key Differences Compared to Your Product</h3>
+        `;
+
+        alternatives.forEach((alt, index) => {
+            html += `
+                <div class="comparison-point">
+                    <strong>${alt.brand} ${alt.product_name}</strong>
+                    <p>${alt.differentiators}</p>
+                </div>
+            `;
+        });
+
+        const originalPrice = extractPrice(original.price || original.price_in_inr || '0');
+        const prices = alternatives.map(a => extractPrice(a.price));
+        const avgAltPrice = prices.reduce((a, b) => a + b, 0) / prices.length;
+
+        if (originalPrice < avgAltPrice) {
+            html += `
+                <div class="comparison-point">
+                    <strong>Price Advantage</strong>
+                    <p>Your product is more affordable compared to the alternatives, offering better value for money while maintaining similar benefits.</p>
+                </div>
+            `;
+        } else if (originalPrice > avgAltPrice) {
+            html += `
+                <div class="comparison-point">
+                    <strong>Premium Positioning</strong>
+                    <p>Your product is positioned at a higher price point, which may indicate premium ingredients, better formulation, or stronger brand reputation.</p>
+                </div>
+            `;
         }
 
-        function renderComparisonSummary(original, alternatives) {
-            if (!alternatives || alternatives.length === 0) return '';
+        html += '</div>';
+        return html;
+    }
 
-            let html = `
-                <div class="comparison-summary">
-                    <h3>Key Differences Compared to Your Product</h3>
-            `;
+    function extractPrice(priceStr) {
+        const match = priceStr.toString().match(/\d+/);
+        return match ? parseInt(match[0]) : 0;
+    }
 
-            alternatives.forEach((alt, index) => {
-                html += `
-                    <div class="comparison-point">
-                        <strong>${alt.brand} ${alt.product_name}</strong>
-                        <p>${alt.differentiators}</p>
-                    </div>
-                `;
-            });
-
-            const originalPrice = extractPrice(original.price || original.price_in_inr || '0');
-            const prices = alternatives.map(a => extractPrice(a.price));
-            const avgAltPrice = prices.reduce((a, b) => a + b, 0) / prices.length;
-
-            if (originalPrice < avgAltPrice) {
-                html += `
-                    <div class="comparison-point">
-                        <strong>Price Advantage</strong>
-                        <p>Your product is more affordable compared to the alternatives, offering better value for money while maintaining similar benefits.</p>
-                    </div>
-                `;
-            } else if (originalPrice > avgAltPrice) {
-                html += `
-                    <div class="comparison-point">
-                        <strong>Premium Positioning</strong>
-                        <p>Your product is positioned at a higher price point, which may indicate premium ingredients, better formulation, or stronger brand reputation.</p>
-                    </div>
-                `;
+    function renderFAQ(data) {
+        let faqs = data.faqs || [];
+        
+        // Handle if faqs is a string (JSON string)
+        if (typeof faqs === 'string') {
+            try {
+                faqs = JSON.parse(faqs);
+            } catch (e) {
+                console.error('Failed to parse FAQs:', e);
+                faqs = [];
             }
-
-            html += '</div>';
-            return html;
+        }
+        
+        // If still not an array, try to extract from nested structure
+        if (!Array.isArray(faqs)) {
+            faqs = [];
         }
 
-        function extractPrice(priceStr) {
-            const match = priceStr.toString().match(/\d+/);
-            return match ? parseInt(match[0]) : 0;
-        }
+        let html = `
+            <div class="result-header">Frequently Asked Questions</div>
+            <div class="result-content">
+                <div class="faq-container">
+        `;
 
-        function renderFAQ(data) {
-            const faqs = data.faqs || [];
-
-            let html = `
-                <div class="result-header">Frequently Asked Questions</div>
-                <div class="result-content">
-                    <div class="faq-container">
-            `;
-
+        if (faqs.length === 0) {
+            html += '<p style="text-align: center; padding: 40px; color: #999;">No FAQs generated</p>';
+        } else {
             faqs.forEach((faq, index) => {
+                const question = faq.question || 'Question not available';
+                const answer = faq.answer || 'Answer not available';
+                
                 html += `
                     <div class="faq-item">
                         <div class="faq-number">${index + 1}</div>
                         <div class="faq-content">
-                            <div class="faq-question">${faq.question}</div>
+                            <div class="faq-question">${question}</div>
                             <div class="faq-divider"></div>
-                            <div class="faq-answer">${faq.answer}</div>
+                            <div class="faq-answer">${answer}</div>
                         </div>
                     </div>
                 `;
             });
+        }
 
-            html += `
-                    </div>
+        html += `
                 </div>
-            `;
+            </div>
+        `;
 
-            return html;
-        }
+        return html;
+    }
 
-        function showError(message) {
-            const error = document.getElementById('error');
-            error.textContent = message;
-            error.style.display = 'block';
-        }
-    </script>
-</body>
-</html>
+    function showError(message) {
+        const error = document.getElementById('error');
+        error.textContent = message;
+        error.style.display = 'block';
+    }
+</script>

@@ -1,0 +1,106 @@
+{
+  "timestamp": "20251209_134324",
+  "product_name": "custom_product",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "raw_data": "miracle"
+    },
+    "comparison": {
+      "similar_products": [
+        {
+          "brand": "Himalaya",
+          "product_name": "Himalaya Herbals Moisturizing Cream",
+          "key_features": "Non-greasy, hydrates skin for 24 hours, hypoallergenic",
+          "price": "Rs 215",
+          "rating": 4.2,
+          "rating_source": "estimated",
+          "differentiators": "Ayurvedic ingredients, suitable for dry skin"
+        },
+        {
+          "brand": "Lakme",
+          "product_name": "Lakme 9 to 5 Moisturizer",
+          "key_features": "Lightweight, oil-free, SPF 20",
+          "price": "Rs 299",
+          "rating": 4.1,
+          "rating_source": "estimated",
+          "differentiators": "Suitable for daily use, provides sun protection"
+        },
+        {
+          "brand": "Nivea",
+          "product_name": "Nivea Soft Moisturizing Cream",
+          "key_features": "Rich, non-greasy, 24-hour hydration",
+          "price": "Rs 399",
+          "rating": 4.4,
+          "rating_source": "estimated",
+          "differentiators": "Vitamin E enriched, suitable for dry and sensitive skin"
+        }
+      ],
+      "comparison": {
+        "product_data": {
+          "raw_data": "miracle"
+        },
+        "comparison_basis": {
+          "primary_factors": [
+            "Active ingredient type",
+            "Ingredient concentration",
+            "Skin type suitability",
+            "Price"
+          ],
+          "assumptions": [
+            "Ratings are estimated",
+            "Brand reputation inferred"
+          ]
+        },
+        "similar_products": [
+          {
+            "brand": "Himalaya",
+            "product_name": "Himalaya Herbals Moisturizing Cream",
+            "key_features": "Non-greasy, hydrates skin for 24 hours, hypoallergenic",
+            "price": "Rs 215",
+            "rating": 4.2,
+            "rating_source": "estimated",
+            "differentiators": "Ayurvedic ingredients, suitable for dry skin"
+          },
+          {
+            "brand": "Lakme",
+            "product_name": "Lakme 9 to 5 Moisturizer",
+            "key_features": "Lightweight, oil-free, SPF 20",
+            "price": "Rs 299",
+            "rating": 4.1,
+            "rating_source": "estimated",
+            "differentiators": "Suitable for daily use, provides sun protection"
+          },
+          {
+            "brand": "Nivea",
+            "product_name": "Nivea Soft Moisturizing Cream",
+            "key_features": "Rich, non-greasy, 24-hour hydration",
+            "price": "Rs 399",
+            "rating": 4.4,
+            "rating_source": "estimated",
+            "differentiators": "Vitamin E enriched, suitable for dry and sensitive skin"
+          }
+        ],
+        "analysis": {
+          "comparison_basis": "The original product is a generic term 'miracle' which is not a specific product, so the comparison is based on the assumption that the original product is a moisturizer as all the alternative products are moisturizers.",
+          "comparison_summary": "The alternative products are from different brands such as Himalaya, Lakme, and Nivea, and they have different key features, prices, and ratings. The ratings are estimated and may not be accurate.",
+          "feature_comparison": {
+            "Himalaya Herbals Moisturizing Cream": "Non-greasy, hydrates skin for 24 hours, hypoallergenic, Ayurvedic ingredients, suitable for dry skin",
+            "Lakme 9 to 5 Moisturizer": "Lightweight, oil-free, SPF 20, suitable for daily use, provides sun protection",
+            "Nivea Soft Moisturizing Cream": "Rich, non-greasy, 24-hour hydration, Vitamin E enriched, suitable for dry and sensitive skin"
+          },
+          "price_analysis": {
+            "price_range": "Rs 215 - Rs 399",
+            "cheapest_product": "Himalaya Herbals Moisturizing Cream",
+            "most_expensive_product": "Nivea Soft Moisturizing Cream"
+          },
+          "recommendations": [
+            "If you are looking for a moisturizer for dry skin, consider Himalaya Herbals Moisturizing Cream or Nivea Soft Moisturizing Cream.",
+            "If you are looking for a lightweight moisturizer for daily use, consider Lakme 9 to 5 Moisturizer."
+          ],
+          "best_value_pick": "Himalaya Herbals Moisturizing Cream"
+        }
+      }
+    }
+  }
+}

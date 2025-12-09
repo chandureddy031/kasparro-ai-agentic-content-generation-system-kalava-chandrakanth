@@ -1,0 +1,29 @@
+{
+  "timestamp": "20251209_134004",
+  "product_name": "HydraGlow Hyaluronic Acid Serum",
+  "operation": "description",
+  "results": {
+    "product_data": {
+      "product_name": "HydraGlow Hyaluronic Acid Serum",
+      "concentration": "2% Hyaluronic Acid",
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "key_ingredients": [
+        "Hyaluronic Acid",
+        "Vitamin B5"
+      ],
+      "benefits": [
+        "Deep hydration",
+        "Improves skin elasticity"
+      ],
+      "how_to_use": "Apply on damp skin twice daily",
+      "side_effects": "No major side effects",
+      "price_in_inr": 649
+    },
+    "description": {
+      "description": "```json\n{\n  \"title\": \"HydraGlow Hyaluronic Acid Serum: Unlock Deep Hydration and Radiant Skin\",\n  \"description\": \"HydraGlow Hyaluronic Acid Serum is a potent, 2% hyaluronic acid formula designed to provide long-lasting hydration and improve skin elasticity. This serum is specifically formulated for dry and sensitive skin types, helping to lock in moisture and leave your skin feeling soft, supple, and rejuvenated. With its unique blend of hyaluronic acid and vitamin B5, HydraGlow Hyaluronic Acid Serum is the perfect addition to your daily skincare routine.\",\n  \"highlights\": [\n    \"Deep hydration for up to 24 hours\",\n    \"Improves skin elasticity for a more youthful appearance\",\n    \"Soothes and calms dry and sensitive skin\",\n    \"Non-greasy, lightweight texture\",\n    \"Enhances skin radiance and glow\",\n    \"Cruelty-free and suitable for all skin types, including dry and sensitive skin\"\n  ],\n  \"usage_instructions\": \"To use: Apply 2-3 drops of HydraGlow Hyaluronic Acid Serum onto damp skin, twice daily. Gently massage into the skin until fully absorbed. For best results, use in conjunction with your regular skincare routine.\"\n}\n```"
+    }
+  }
+}

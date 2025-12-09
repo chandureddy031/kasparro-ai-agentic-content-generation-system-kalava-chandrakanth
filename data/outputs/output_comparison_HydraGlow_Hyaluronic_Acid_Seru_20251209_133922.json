@@ -1,0 +1,138 @@
+{
+  "timestamp": "20251209_133922",
+  "product_name": "HydraGlow Hyaluronic Acid Serum",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "product_name": "HydraGlow Hyaluronic Acid Serum",
+      "concentration": "2% Hyaluronic Acid",
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "key_ingredients": [
+        "Hyaluronic Acid",
+        "Vitamin B5"
+      ],
+      "benefits": [
+        "Deep hydration",
+        "Improves skin elasticity"
+      ],
+      "how_to_use": "Apply on damp skin twice daily",
+      "side_effects": "No major side effects",
+      "price_in_inr": 649
+    },
+    "comparison": {
+      "similar_products": [
+        {
+          "brand": "Lakme",
+          "product_name": "Lakme 9 To 5 Hyaluronic Serum",
+          "key_features": "Hyaluronic Acid, Vitamin E, Lightweight texture",
+          "price": "Rs 799",
+          "rating": 4.2,
+          "rating_source": "estimated",
+          "differentiators": "Oil-free and non-comedogenic"
+        },
+        {
+          "brand": "Plum",
+          "product_name": "Plum Hyaluronic Acid Serum",
+          "key_features": "Hyaluronic Acid, Green Tea Extract, Vegan-friendly",
+          "price": "Rs 575",
+          "rating": 4.1,
+          "rating_source": "estimated",
+          "differentiators": "Cruelty-free and eco-friendly packaging"
+        },
+        {
+          "brand": "Mamaearth",
+          "product_name": "Mamaearth Hyaluronic Acid Water Serum",
+          "key_features": "Hyaluronic Acid, Witch Hazel, Soothing properties",
+          "price": "Rs 699",
+          "rating": 4.4,
+          "rating_source": "estimated",
+          "differentiators": "Toxin-free and fragrance-free"
+        }
+      ],
+      "comparison": {
+        "product_data": {
+          "product_name": "HydraGlow Hyaluronic Acid Serum",
+          "concentration": "2% Hyaluronic Acid",
+          "skin_type": [
+            "Dry",
+            "Sensitive"
+          ],
+          "key_ingredients": [
+            "Hyaluronic Acid",
+            "Vitamin B5"
+          ],
+          "benefits": [
+            "Deep hydration",
+            "Improves skin elasticity"
+          ],
+          "how_to_use": "Apply on damp skin twice daily",
+          "side_effects": "No major side effects",
+          "price_in_inr": 649
+        },
+        "comparison_basis": {
+          "primary_factors": [
+            "Active ingredient type",
+            "Ingredient concentration",
+            "Skin type suitability",
+            "Price"
+          ],
+          "assumptions": [
+            "Ratings are estimated",
+            "Brand reputation inferred"
+          ]
+        },
+        "similar_products": [
+          {
+            "brand": "Lakme",
+            "product_name": "Lakme 9 To 5 Hyaluronic Serum",
+            "key_features": "Hyaluronic Acid, Vitamin E, Lightweight texture",
+            "price": "Rs 799",
+            "rating": 4.2,
+            "rating_source": "estimated",
+            "differentiators": "Oil-free and non-comedogenic"
+          },
+          {
+            "brand": "Plum",
+            "product_name": "Plum Hyaluronic Acid Serum",
+            "key_features": "Hyaluronic Acid, Green Tea Extract, Vegan-friendly",
+            "price": "Rs 575",
+            "rating": 4.1,
+            "rating_source": "estimated",
+            "differentiators": "Cruelty-free and eco-friendly packaging"
+          },
+          {
+            "brand": "Mamaearth",
+            "product_name": "Mamaearth Hyaluronic Acid Water Serum",
+            "key_features": "Hyaluronic Acid, Witch Hazel, Soothing properties",
+            "price": "Rs 699",
+            "rating": 4.4,
+            "rating_source": "estimated",
+            "differentiators": "Toxin-free and fragrance-free"
+          }
+        ],
+        "analysis": {
+          "comparison_basis": "The comparison is based on the key features, benefits, and price of the original product and the alternative products.",
+          "comparison_summary": "The original product, HydraGlow Hyaluronic Acid Serum, is compared with three alternative products from Lakme, Plum, and Mamaearth. The alternative products have similar key features, but differ in terms of price, rating, and differentiators.",
+          "feature_comparison": {
+            "key_ingredients": "All products contain Hyaluronic Acid, but the original product also contains Vitamin B5, while the alternative products have additional ingredients such as Vitamin E, Green Tea Extract, and Witch Hazel.",
+            "skin_type": "The original product is suitable for dry and sensitive skin, but the alternative products do not specify skin type.",
+            "benefits": "The original product provides deep hydration and improves skin elasticity, which is similar to the benefits of the alternative products."
+          },
+          "price_analysis": {
+            "price_range": "The prices of the alternative products range from Rs 575 to Rs 799, while the original product is priced at Rs 649.",
+            "price_comparison": "The Plum Hyaluronic Acid Serum is the most affordable option, while the Lakme 9 To 5 Hyaluronic Serum is the most expensive."
+          },
+          "recommendations": {
+            "for_dry_skin": "The original product and the Mamaearth Hyaluronic Acid Water Serum are suitable for dry skin due to their soothing properties.",
+            "for_sensitive_skin": "The original product and the Plum Hyaluronic Acid Serum are suitable for sensitive skin due to their gentle and non-irritating ingredients.",
+            "for_budget_conscious": "The Plum Hyaluronic Acid Serum is the best option for budget-conscious buyers due to its affordable price."
+          },
+          "best_value_pick": "The Mamaearth Hyaluronic Acid Water Serum is the best value pick due to its high rating, toxin-free and fragrance-free formula, and competitive pricing."
+        }
+      }
+    }
+  }
+}

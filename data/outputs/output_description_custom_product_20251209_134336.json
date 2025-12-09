@@ -1,0 +1,13 @@
+{
+  "timestamp": "20251209_134336",
+  "product_name": "custom_product",
+  "operation": "description",
+  "results": {
+    "product_data": {
+      "raw_data": "miracle"
+    },
+    "description": {
+      "description": "```json\n{\n  \"title\": \"Miracle Skin Renewal\",\n  \"description\": \"The Miracle Skin Renewal product is a revolutionary skincare solution designed to rejuvenate and revitalize your skin. Its primary purpose is to provide a radiant and youthful glow by addressing various skin concerns. With its unique formula, this product helps to transform your skin, making it look smoother, brighter, and more even-toned.\",\n  \"highlights\": [\n    \"Renews and rejuvenates the skin for a radiant glow\",\n    \"Addresses various skin concerns for a smoother complexion\",\n    \"Unique formula for a brighter and more even-toned skin\",\n    \"Suitable for all skin types, including sensitive skin\",\n    \"Easy to use and incorporate into your daily skincare routine\",\n    \"Clinically tested for safety and efficacy\"\n  ],\n  \"usage_instructions\": [\n    \"Apply a small amount to your face and neck after cleansing\",\n    \"Gently massage the product into your skin until fully absorbed\",\n    \"Use once or twice daily, depending on your skin type and concerns\",\n    \"For best results, use in conjunction with other skincare products from our range\"\n  ]\n}\n```"
+    }
+  }
+}

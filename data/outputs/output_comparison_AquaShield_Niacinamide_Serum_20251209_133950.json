@@ -1,0 +1,180 @@
+{
+  "timestamp": "20251209_133950",
+  "product_name": "AquaShield Niacinamide Serum",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "product_name": "AquaShield Niacinamide Serum",
+      "concentration": "5% Niacinamide",
+      "skin_type": [
+        "Oily",
+        "Acne-Prone"
+      ],
+      "key_ingredients": [
+        "Niacinamide",
+        "Zinc PCA"
+      ],
+      "benefits": [
+        "Controls oil",
+        "Reduces acne marks",
+        "Minimizes pores"
+      ],
+      "how_to_use": "Apply 2–3 drops at night after cleansing",
+      "side_effects": "Slight dryness during initial use",
+      "price_in_inr": 599
+    },
+    "comparison": {
+      "similar_products": [
+        {
+          "brand": "Mamaearth",
+          "product_name": "Niacinamide Serum",
+          "key_features": "Niacinamide, Hyaluronic Acid, and Vitamin E for skin brightening and hydration",
+          "price": "Rs 699",
+          "rating": 4.3,
+          "rating_source": "estimated",
+          "differentiators": "Toxin-free, cruelty-free, and vegan-friendly"
+        },
+        {
+          "brand": "Plum",
+          "product_name": "Green Tea Renewed Clarity Night Serum",
+          "key_features": "Niacinamide, Green Tea, and Glycolic Acid for skin renewal and acne control",
+          "price": "Rs 575",
+          "rating": 4.2,
+          "rating_source": "estimated",
+          "differentiators": "Plant-based ingredients, non-comedogenic, and recyclable packaging"
+        },
+        {
+          "brand": "The Derma Co",
+          "product_name": "1% Niacinamide Face Serum",
+          "key_features": "Niacinamide and Zinc PCA for skin brightening, acne control, and hydration",
+          "price": "Rs 645",
+          "rating": 4.4,
+          "rating_source": "estimated",
+          "differentiators": "Dermatologically tested, fragrance-free, and hypoallergenic"
+        }
+      ],
+      "comparison": {
+        "product_data": {
+          "product_name": "AquaShield Niacinamide Serum",
+          "concentration": "5% Niacinamide",
+          "skin_type": [
+            "Oily",
+            "Acne-Prone"
+          ],
+          "key_ingredients": [
+            "Niacinamide",
+            "Zinc PCA"
+          ],
+          "benefits": [
+            "Controls oil",
+            "Reduces acne marks",
+            "Minimizes pores"
+          ],
+          "how_to_use": "Apply 2–3 drops at night after cleansing",
+          "side_effects": "Slight dryness during initial use",
+          "price_in_inr": 599
+        },
+        "comparison_basis": {
+          "primary_factors": [
+            "Active ingredient type",
+            "Ingredient concentration",
+            "Skin type suitability",
+            "Price"
+          ],
+          "assumptions": [
+            "Ratings are estimated",
+            "Brand reputation inferred"
+          ]
+        },
+        "similar_products": [
+          {
+            "brand": "Mamaearth",
+            "product_name": "Niacinamide Serum",
+            "key_features": "Niacinamide, Hyaluronic Acid, and Vitamin E for skin brightening and hydration",
+            "price": "Rs 699",
+            "rating": 4.3,
+            "rating_source": "estimated",
+            "differentiators": "Toxin-free, cruelty-free, and vegan-friendly"
+          },
+          {
+            "brand": "Plum",
+            "product_name": "Green Tea Renewed Clarity Night Serum",
+            "key_features": "Niacinamide, Green Tea, and Glycolic Acid for skin renewal and acne control",
+            "price": "Rs 575",
+            "rating": 4.2,
+            "rating_source": "estimated",
+            "differentiators": "Plant-based ingredients, non-comedogenic, and recyclable packaging"
+          },
+          {
+            "brand": "The Derma Co",
+            "product_name": "1% Niacinamide Face Serum",
+            "key_features": "Niacinamide and Zinc PCA for skin brightening, acne control, and hydration",
+            "price": "Rs 645",
+            "rating": 4.4,
+            "rating_source": "estimated",
+            "differentiators": "Dermatologically tested, fragrance-free, and hypoallergenic"
+          }
+        ],
+        "analysis": {
+          "comparison_basis": "The comparison is based on the features, benefits, and prices of the original product, AquaShield Niacinamide Serum, and three alternative products: Mamaearth Niacinamide Serum, Plum Green Tea Renewed Clarity Night Serum, and The Derma Co 1% Niacinamide Face Serum.",
+          "comparison_summary": "The original product, AquaShield Niacinamide Serum, has a concentration of 5% Niacinamide and is designed for oily and acne-prone skin. The alternative products have similar key features, but with varying concentrations of Niacinamide and additional ingredients. The prices of the alternative products are comparable, with Mamaearth Niacinamide Serum being the most expensive and Plum Green Tea Renewed Clarity Night Serum being the least expensive.",
+          "feature_comparison": {
+            "AquaShield Niacinamide Serum": {
+              "concentration": "5% Niacinamide",
+              "skin_type": [
+                "Oily",
+                "Acne-Prone"
+              ],
+              "key_ingredients": [
+                "Niacinamide",
+                "Zinc PCA"
+              ],
+              "benefits": [
+                "Controls oil",
+                "Reduces acne marks",
+                "Minimizes pores"
+              ]
+            },
+            "Mamaearth Niacinamide Serum": {
+              "key_features": "Niacinamide, Hyaluronic Acid, and Vitamin E for skin brightening and hydration",
+              "skin_type": "Not specified",
+              "key_ingredients": [
+                "Niacinamide",
+                "Hyaluronic Acid",
+                "Vitamin E"
+              ],
+              "benefits": "Not specified"
+            },
+            "Plum Green Tea Renewed Clarity Night Serum": {
+              "key_features": "Niacinamide, Green Tea, and Glycolic Acid for skin renewal and acne control",
+              "skin_type": "Not specified",
+              "key_ingredients": [
+                "Niacinamide",
+                "Green Tea",
+                "Glycolic Acid"
+              ],
+              "benefits": "Not specified"
+            },
+            "The Derma Co 1% Niacinamide Face Serum": {
+              "key_features": "Niacinamide and Zinc PCA for skin brightening, acne control, and hydration",
+              "skin_type": "Not specified",
+              "key_ingredients": [
+                "Niacinamide",
+                "Zinc PCA"
+              ],
+              "benefits": "Not specified"
+            }
+          },
+          "price_analysis": {
+            "AquaShield Niacinamide Serum": 599,
+            "Mamaearth Niacinamide Serum": 699,
+            "Plum Green Tea Renewed Clarity Night Serum": 575,
+            "The Derma Co 1% Niacinamide Face Serum": 645
+          },
+          "recommendations": "Based on the comparison, Plum Green Tea Renewed Clarity Night Serum is a good option for those looking for a similar product at a lower price point. However, it is essential to note that the concentration of Niacinamide in this product is not specified. The Derma Co 1% Niacinamide Face Serum is another option that is dermatologically tested and hypoallergenic, but it has a lower concentration of Niacinamide compared to the original product.",
+          "best_value_pick": "Plum Green Tea Renewed Clarity Night Serum"
+        }
+      }
+    }
+  }
+}
