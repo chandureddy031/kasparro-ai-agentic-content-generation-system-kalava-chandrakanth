@@ -1,0 +1,30 @@
+PRODUCT COMPARISON TEMPLATE
+
+Create a comprehensive comparison analysis:
+
+1. EXECUTIVE SUMMARY: Brief overview of all products being compared
+2. FEATURE COMPARISON TABLE:
+   - Product Name & Brand
+   - Key Features
+   - Price
+   - Rating
+   - Best For
+
+3. DETAILED ANALYSIS:
+   - Ingredient Quality
+   - Effectiveness
+   - Value for Money
+   - Brand Reputation
+
+4. PRICE ANALYSIS:
+   - Budget Option
+   - Mid-Range Option
+   - Premium Option
+
+5. RECOMMENDATIONS:
+   - Best Overall
+   - Best Value
+   - Best for Specific Needs
+
+Format: JSON with comparison tables and narrative sections
+Use current 2025 market data and pricing

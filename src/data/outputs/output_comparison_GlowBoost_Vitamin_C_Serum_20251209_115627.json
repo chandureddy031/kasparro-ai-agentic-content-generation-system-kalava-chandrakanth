@@ -1,0 +1,48 @@
+{
+  "timestamp": "20251209_115627",
+  "product_name": "GlowBoost Vitamin C Serum",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "product_name": "GlowBoost Vitamin C Serum",
+      "concentration": "10% Vitamin C",
+      "skin_type": "Oily, Combination",
+      "key_ingredients": "Vitamin C, Hyaluronic Acid",
+      "benefits": "Brightening, Fades dark spots",
+      "how_to_use": "Apply 2-3 drops in the morning before sunscreen",
+      "side_effects": "Mild tingling for sensitive skin",
+      "price": "₹699"
+    },
+    "comparison": {
+      "similar_products": [
+        {
+          "brand": "Neutrixa",
+          "product_name": "VitaGlow Serum",
+          "key_features": "15% Vitamin C, Hyaluronic Acid, Niacinamide",
+          "price": "€49",
+          "rating": 4.2,
+          "differentiators": "Cruelty-free, vegan-friendly, lightweight texture"
+        },
+        {
+          "brand": "Dermaluxe",
+          "product_name": "C-Bright Serum",
+          "key_features": "10% Vitamin C, Peptides, Plant Extracts",
+          "price": "€69",
+          "rating": 4.5,
+          "differentiators": "Stable Vitamin C formula, anti-aging benefits, sleek packaging"
+        },
+        {
+          "brand": "Aurum Skincare",
+          "product_name": "Lumina Serum",
+          "key_features": "20% Vitamin C, Gold Particles, Collagen Boosters",
+          "price": "€129",
+          "rating": 4.8,
+          "differentiators": "Luxurious gold-infused formula, advanced anti-aging technology, high-end packaging"
+        }
+      ],
+      "comparison": {
+        "comparison": "```\n{\n  \"comparison_summary\": \"This comparison analysis evaluates four vitamin C serums: GlowBoost, VitaGlow, C-Bright, and Lumina. These products cater to various skin types and concerns, with key features including vitamin C concentration, additional ingredients, and brand reputation.\",\n  \"feature_comparison\": {\n    \"products\": [\n      {\n        \"product_name\": \"GlowBoost Vitamin C Serum\",\n        \"brand\": \"Original\",\n        \"key_features\": \"10% Vitamin C, Hyaluronic Acid\",\n        \"price\": \"€69\",\n        \"rating\": 4.1,\n        \"best_for\": \"Oily, Combination skin\"\n      },\n      {\n        \"product_name\": \"VitaGlow Serum\",\n        \"brand\": \"Neutrixa\",\n        \"key_features\": \"15% Vitamin C, Hyaluronic Acid, Niacinamide\",\n        \"price\": \"€49\",\n        \"rating\": 4.2,\n        \"best_for\": \"Sensitive, Normal skin\"\n      },\n      {\n        \"product_name\": \"C-Bright Serum\",\n        \"brand\": \"Dermaluxe\",\n        \"key_features\": \"10% Vitamin C, Peptides, Plant Extracts\",\n        \"price\": \"€69\",\n        \"rating\": 4.5,\n        \"best_for\": \"Mature, Dry skin\"\n      },\n      {\n        \"product_name\": \"Lumina Serum\",\n        \"brand\": \"Aurum Skincare\",\n        \"key_features\": \"20% Vitamin C, Gold Particles, Collagen Boosters\",\n        \"price\": \"€129\",\n        \"rating\": 4.8,\n        \"best_for\": \"All skin types, Luxury\"\n      }\n    ]\n  },\n  \"detailed_analysis\": {\n    \"ingredient_quality\": \"All products feature high-quality ingredients, with Lumina Serum standing out for its luxurious gold-infused formula.\",\n    \"effectiveness\": \"C-Bright Serum and Lumina Serum have the highest ratings for effectiveness, with users reporting noticeable brightening and anti-aging benefits.\",\n    \"value_for_money\": \"VitaGlow Serum offers the best value for money, with a competitive price point and impressive features.\",\n    \"brand_reputation\": \"Aurum Skincare and Dermaluxe have established strong brand reputations, with Neutrixa gaining popularity for its cruelty-free and vegan-friendly products.\"\n  },\n  \"price_analysis\": {\n    \"budget_option\": \"VitaGlow Serum (€49)\",\n    \"mid_range_option\": \"GlowBoost Vitamin C Serum (€69) and C-Bright Serum (€69)\",\n    \"premium_option\": \"Lumina Serum (€129)\"\n  },\n  \"recommendations\": {\n    \"best_overall\": \"Lumina Serum\",\n    \"best_value\": \"VitaGlow Serum\",\n    \"best_for_specific_needs\": {\n      \"sensitive_skin\": \"VitaGlow Serum\",\n      \"mature_skin\": \"C-Bright Serum\",\n      \"oily_skin\": \"GlowBoost Vitamin C Serum\"\n    }\n  },\n  \"best_value_pick\": \"VitaGlow Serum\"\n}\n```"
+      }
+    }
+  }
+}

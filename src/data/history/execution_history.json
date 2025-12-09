@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2025-12-09T11:53:42.231432",
+    "product": "Unknown Product",
+    "operation": "description",
+    "output_file": "output_description_Unknown_Product_20251209_115342.json"
+  },
+  {
+    "timestamp": "2025-12-09T11:53:58.630050",
+    "product": "GlowBoost Vitamin C Serum",
+    "operation": "faq",
+    "output_file": "output_faq_GlowBoost_Vitamin_C_Serum_20251209_115358.json"
+  },
+  {
+    "timestamp": "2025-12-09T11:56:27.688751",
+    "product": "GlowBoost Vitamin C Serum",
+    "operation": "comparison",
+    "output_file": "output_comparison_GlowBoost_Vitamin_C_Serum_20251209_115627.json"
+  }
+]

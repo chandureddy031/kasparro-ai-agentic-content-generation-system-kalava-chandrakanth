@@ -1,0 +1,30 @@
+{
+  "timestamp": "20251209_123705",
+  "product_name": "AquaShield Niacinamide Serum",
+  "operation": "description",
+  "results": {
+    "product_data": {
+      "product_name": "AquaShield Niacinamide Serum",
+      "concentration": "5% Niacinamide",
+      "skin_type": [
+        "Oily",
+        "Acne-Prone"
+      ],
+      "key_ingredients": [
+        "Niacinamide",
+        "Zinc PCA"
+      ],
+      "benefits": [
+        "Controls oil",
+        "Reduces acne marks",
+        "Minimizes pores"
+      ],
+      "how_to_use": "Apply 2–3 drops at night after cleansing",
+      "side_effects": "Slight dryness during initial use",
+      "price_in_inr": 599
+    },
+    "description": {
+      "description": "```json\n{\n  \"title\": \"AquaShield Niacinamide Serum - Advanced Oil Control and Acne Reduction\",\n  \"description\": \"AquaShield Niacinamide Serum is a potent skincare solution designed to address oily and acne-prone skin. This 5% Niacinamide serum effectively controls oil production, reduces acne marks, and minimizes pores, revealing a smoother and more even-toned complexion. With its unique blend of Niacinamide and Zinc PCA, this serum provides long-lasting benefits for a healthier and more radiant skin.\",\n  \"highlights\": [\n    \"Controls oil production to prevent excessive shine\",\n    \"Reduces acne marks and scars for a clearer complexion\",\n    \"Minimizes pores to give skin a smoother appearance\",\n    \"Suitable for oily and acne-prone skin types\",\n    \"Contains 5% Niacinamide for enhanced efficacy\",\n    \"Also features Zinc PCA for additional skin benefits\"\n  ],\n  \"usage_instructions\": \"To use, apply 2–3 drops of AquaShield Niacinamide Serum at night after cleansing. Gently massage into the skin until fully absorbed. Note: You may experience slight dryness during initial use, but this should subside as your skin adjusts to the product.\"\n}\n```"
+    }
+  }
+}

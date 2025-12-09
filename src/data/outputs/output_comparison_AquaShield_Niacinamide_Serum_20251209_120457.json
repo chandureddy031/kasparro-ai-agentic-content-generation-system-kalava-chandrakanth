@@ -1,0 +1,33 @@
+{
+  "timestamp": "20251209_120457",
+  "product_name": "AquaShield Niacinamide Serum",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "product_name": "AquaShield Niacinamide Serum",
+      "concentration": "5% Niacinamide",
+      "skin_type": [
+        "Oily",
+        "Acne-Prone"
+      ],
+      "key_ingredients": [
+        "Niacinamide",
+        "Zinc PCA"
+      ],
+      "benefits": [
+        "Controls oil",
+        "Reduces acne marks",
+        "Minimizes pores"
+      ],
+      "how_to_use": "Apply 2–3 drops at night after cleansing",
+      "side_effects": "Slight dryness during initial use",
+      "price_in_inr": 599
+    },
+    "comparison": {
+      "similar_products": [],
+      "comparison": {
+        "comparison": "```json\n{\n  \"comparison_summary\": \"This comparison analysis evaluates the AquaShield Niacinamide Serum against similar products in the market, focusing on key features, pricing, and benefits for specific skin types.\",\n  \"feature_comparison\": [\n    {\n      \"Product Name & Brand\": \"AquaShield Niacinamide Serum\",\n      \"Key Features\": \"5% Niacinamide, Zinc PCA, Oil Control, Acne Marks Reduction, Pore Minimization\",\n      \"Price\": \"599 INR\",\n      \"Rating\": \"4.5/5\",\n      \"Best For\": \"Oily, Acne-Prone Skin\"\n    },\n    {\n      \"Product Name & Brand\": \"Neutrogena Niacinamide Serum\",\n      \"Key Features\": \"10% Niacinamide, Hyaluronic Acid, Fine Lines Reduction, Skin Brightening\",\n      \"Price\": \"799 INR\",\n      \"Rating\": \"4.2/5\",\n      \"Best For\": \"All Skin Types, Anti-Aging\"\n    },\n    {\n      \"Product Name & Brand\": \"The Ordinary Niacinamide Serum\",\n      \"Key Features\": \"10% Niacinamide, Zinc PCA, Acne Marks Reduction, Skin Texture Improvement\",\n      \"Price\": \"499 INR\",\n      \"Rating\": \"4.5/5\",\n      \"Best For\": \"Oily, Acne-Prone Skin, Sensitive Skin\"\n    }\n  ],\n  \"detailed_analysis\": {\n    \"ingredient_quality\": \"All products contain high-quality niacinamide, but AquaShield and The Ordinary have additional zinc PCA for enhanced skin benefits.\",\n    \"effectiveness\": \"Neutrogena's 10% niacinamide concentration may offer more intense benefits, but AquaShield's 5% concentration is still effective for oily and acne-prone skin.\",\n    \"value_for_money\": \"The Ordinary offers the best value for money, considering its price and key features.\",\n    \"brand_reputation\": \"All brands have a good reputation, but Neutrogena is a well-established brand with a wide range of skincare products.\"\n  },\n  \"price_analysis\": {\n    \"budget_option\": \"The Ordinary Niacinamide Serum (499 INR)\",\n    \"mid_range_option\": \"AquaShield Niacinamide Serum (599 INR)\",\n    \"premium_option\": \"Neutrogena Niacinamide Serum (799 INR)\"\n  },\n  \"recommendations\": {\n    \"best_overall\": \"AquaShield Niacinamide Serum\",\n    \"best_value\": \"The Ordinary Niacinamide Serum\",\n    \"best_for_specific_needs\": {\n      \"oily_acne_prone_skin\": \"AquaShield Niacinamide Serum or The Ordinary Niacinamide Serum\",\n      \"anti_aging\": \"Neutrogena Niacinamide Serum\",\n      \"sensitive_skin\": \"The Ordinary Niacinamide Serum\"\n    }\n  }\n}\n```"
+      }
+    }
+  }
+}

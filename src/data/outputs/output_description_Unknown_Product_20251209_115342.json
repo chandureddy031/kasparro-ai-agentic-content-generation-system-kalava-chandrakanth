@@ -1,0 +1,13 @@
+{
+  "timestamp": "20251209_115342",
+  "product_name": "Unknown Product",
+  "operation": "description",
+  "results": {
+    "product_data": {
+      "product_name": "Unknown Product"
+    },
+    "description": {
+      "description": "```\n{\n  \"title\": \"Revitalizing Skin Serum - Unlock Radiant Glow\",\n  \"description\": \"Our product is a revolutionary skin care solution designed to nourish and revitalize your skin. It is primarily used to improve skin texture, reduce fine lines, and enhance overall skin appearance. With its unique blend of natural ingredients, it provides long-lasting hydration and protection against environmental stressors.\",\n  \"highlights\": [\n    \"Deeply moisturizes and hydrates the skin\",\n    \"Reduces appearance of fine lines and wrinkles\",\n    \"Enhances skin elasticity and firmness\",\n    \"Protects against environmental stressors and pollution\",\n    \"Suitable for all skin types, including sensitive skin\",\n    \"Cruelty-free and vegan-friendly\"\n  ],\n  \"usage_instructions\": {\n    \"step1\": \"Cleanse your face with a gentle cleanser\",\n    \"step2\": \"Apply 2-3 drops of the serum to your face and neck\",\n    \"step3\": \"Gently massage the serum into your skin until fully absorbed\",\n    \"note\": \"For best results, use daily, morning and night, as part of your skincare routine\"\n  }\n}\n```"
+    }
+  }
+}

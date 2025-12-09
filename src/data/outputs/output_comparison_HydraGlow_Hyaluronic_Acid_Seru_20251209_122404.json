@@ -1,0 +1,141 @@
+{
+  "timestamp": "20251209_122404",
+  "product_name": "HydraGlow Hyaluronic Acid Serum",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "product_name": "HydraGlow Hyaluronic Acid Serum",
+      "concentration": "2% Hyaluronic Acid",
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "key_ingredients": [
+        "Hyaluronic Acid",
+        "Vitamin B5"
+      ],
+      "benefits": [
+        "Deep hydration",
+        "Improves skin elasticity"
+      ],
+      "how_to_use": "Apply on damp skin twice daily",
+      "side_effects": "No major side effects",
+      "price_in_inr": 649
+    },
+    "comparison": {
+      "similar_products": [
+        {
+          "brand": "Lakme",
+          "product_name": "Lakme 9 To 5 Hyaluronic Serum",
+          "key_features": "Hyaluronic Acid, Vitamin E, Lightweight texture",
+          "price": "Rs 599",
+          "rating": 4.1,
+          "rating_source": "estimated",
+          "differentiators": "Mattifying effect, non-greasy"
+        },
+        {
+          "brand": "Neutrogena",
+          "product_name": "Neutrogena Hydro Boost Water Gel",
+          "key_features": "Hyaluronic Acid, Vitamin E, Fragrance-free",
+          "price": "Rs 749",
+          "rating": 4.4,
+          "rating_source": "estimated",
+          "differentiators": "Oil-free, non-comedogenic"
+        },
+        {
+          "brand": "Plum",
+          "product_name": "Plum Hyaluronic & Vitamin C Serum",
+          "key_features": "Hyaluronic Acid, Vitamin C, Plant stem cells",
+          "price": "Rs 625",
+          "rating": 4.2,
+          "rating_source": "estimated",
+          "differentiators": "Vegan, cruelty-free, paraben-free"
+        }
+      ],
+      "comparison": {
+        "product_data": {
+          "product_name": "HydraGlow Hyaluronic Acid Serum",
+          "concentration": "2% Hyaluronic Acid",
+          "skin_type": [
+            "Dry",
+            "Sensitive"
+          ],
+          "key_ingredients": [
+            "Hyaluronic Acid",
+            "Vitamin B5"
+          ],
+          "benefits": [
+            "Deep hydration",
+            "Improves skin elasticity"
+          ],
+          "how_to_use": "Apply on damp skin twice daily",
+          "side_effects": "No major side effects",
+          "price_in_inr": 649
+        },
+        "comparison_basis": {
+          "primary_factors": [
+            "Active ingredient type",
+            "Ingredient concentration",
+            "Skin type suitability",
+            "Price"
+          ],
+          "assumptions": [
+            "Ratings are estimated",
+            "Brand reputation inferred"
+          ]
+        },
+        "similar_products": [
+          {
+            "brand": "Lakme",
+            "product_name": "Lakme 9 To 5 Hyaluronic Serum",
+            "key_features": "Hyaluronic Acid, Vitamin E, Lightweight texture",
+            "price": "Rs 599",
+            "rating": 4.1,
+            "rating_source": "estimated",
+            "differentiators": "Mattifying effect, non-greasy"
+          },
+          {
+            "brand": "Neutrogena",
+            "product_name": "Neutrogena Hydro Boost Water Gel",
+            "key_features": "Hyaluronic Acid, Vitamin E, Fragrance-free",
+            "price": "Rs 749",
+            "rating": 4.4,
+            "rating_source": "estimated",
+            "differentiators": "Oil-free, non-comedogenic"
+          },
+          {
+            "brand": "Plum",
+            "product_name": "Plum Hyaluronic & Vitamin C Serum",
+            "key_features": "Hyaluronic Acid, Vitamin C, Plant stem cells",
+            "price": "Rs 625",
+            "rating": 4.2,
+            "rating_source": "estimated",
+            "differentiators": "Vegan, cruelty-free, paraben-free"
+          }
+        ],
+        "analysis": {
+          "comparison_basis": "key features, price, and customer ratings",
+          "comparison_summary": "The original HydraGlow Hyaluronic Acid Serum is compared with three alternative products from Lakme, Neutrogena, and Plum. The comparison is based on key features, price, and customer ratings.",
+          "feature_comparison": {
+            "Hyaluronic Acid": "all products contain Hyaluronic Acid",
+            "Vitamin": "original product contains Vitamin B5, Lakme contains Vitamin E, Plum contains Vitamin C",
+            "Skin Type": "original product is for dry and sensitive skin, alternative products do not specify skin type",
+            "Texture": "Lakme has a lightweight texture, Neutrogena is oil-free and non-comedogenic, Plum is vegan and paraben-free"
+          },
+          "price_analysis": {
+            "price_range": "Rs 599 - Rs 749",
+            "cheapest_option": "Lakme 9 To 5 Hyaluronic Serum (Rs 599)",
+            "most_expensive_option": "Neutrogena Hydro Boost Water Gel (Rs 749)",
+            "original_product_price": "Rs 649"
+          },
+          "recommendations": {
+            "for_dry_skin": "original HydraGlow Hyaluronic Acid Serum or Plum Hyaluronic & Vitamin C Serum",
+            "for_sensitive_skin": "original HydraGlow Hyaluronic Acid Serum or Neutrogena Hydro Boost Water Gel",
+            "for_budget_conscious": "Lakme 9 To 5 Hyaluronic Serum"
+          },
+          "best_value_pick": "Plum Hyaluronic & Vitamin C Serum (Rs 625) due to its balanced price, vegan and paraben-free features, and estimated rating of 4.2"
+        }
+      }
+    }
+  }
+}

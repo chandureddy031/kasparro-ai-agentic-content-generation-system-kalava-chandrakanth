@@ -1,0 +1,174 @@
+{
+  "timestamp": "20251209_122047",
+  "product_name": "HydraGlow Hyaluronic Acid Serum",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "product_name": "HydraGlow Hyaluronic Acid Serum",
+      "concentration": "2% Hyaluronic Acid",
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "key_ingredients": [
+        "Hyaluronic Acid",
+        "Vitamin B5"
+      ],
+      "benefits": [
+        "Deep hydration",
+        "Improves skin elasticity"
+      ],
+      "how_to_use": "Apply on damp skin twice daily",
+      "side_effects": "No major side effects",
+      "price_in_inr": 649
+    },
+    "comparison": {
+      "similar_products": [
+        {
+          "brand": "Neutrogena",
+          "product_name": "Neutrogena Hydro Boost Water Gel",
+          "key_features": "Hyaluronic Acid, Vitamin E",
+          "price": "Rs 799",
+          "rating": 4.2,
+          "rating_source": "estimated",
+          "differentiators": "Lightweight, non-greasy texture"
+        },
+        {
+          "brand": "Lakme",
+          "product_name": "Lakme 9 to 5 Hydrating Serum",
+          "key_features": "Hyaluronic Acid, Glycerin",
+          "price": "Rs 599",
+          "rating": 4.1,
+          "rating_source": "estimated",
+          "differentiators": "Oil-free, suitable for all skin types"
+        },
+        {
+          "brand": "Plum",
+          "product_name": "Plum Hyaluronic & Vitamin C Serum",
+          "key_features": "Hyaluronic Acid, Vitamin C",
+          "price": "Rs 899",
+          "rating": 4.4,
+          "rating_source": "estimated",
+          "differentiators": "Cruelty-free, vegan-friendly, and eco-friendly packaging"
+        }
+      ],
+      "comparison": {
+        "product_data": {
+          "product_name": "HydraGlow Hyaluronic Acid Serum",
+          "concentration": "2% Hyaluronic Acid",
+          "skin_type": [
+            "Dry",
+            "Sensitive"
+          ],
+          "key_ingredients": [
+            "Hyaluronic Acid",
+            "Vitamin B5"
+          ],
+          "benefits": [
+            "Deep hydration",
+            "Improves skin elasticity"
+          ],
+          "how_to_use": "Apply on damp skin twice daily",
+          "side_effects": "No major side effects",
+          "price_in_inr": 649
+        },
+        "comparison_basis": {
+          "primary_factors": [
+            "Active ingredient type",
+            "Ingredient concentration",
+            "Skin type suitability",
+            "Price"
+          ],
+          "assumptions": [
+            "Ratings are estimated",
+            "Brand reputation inferred"
+          ]
+        },
+        "similar_products": [
+          {
+            "brand": "Neutrogena",
+            "product_name": "Neutrogena Hydro Boost Water Gel",
+            "key_features": "Hyaluronic Acid, Vitamin E",
+            "price": "Rs 799",
+            "rating": 4.2,
+            "rating_source": "estimated",
+            "differentiators": "Lightweight, non-greasy texture"
+          },
+          {
+            "brand": "Lakme",
+            "product_name": "Lakme 9 to 5 Hydrating Serum",
+            "key_features": "Hyaluronic Acid, Glycerin",
+            "price": "Rs 599",
+            "rating": 4.1,
+            "rating_source": "estimated",
+            "differentiators": "Oil-free, suitable for all skin types"
+          },
+          {
+            "brand": "Plum",
+            "product_name": "Plum Hyaluronic & Vitamin C Serum",
+            "key_features": "Hyaluronic Acid, Vitamin C",
+            "price": "Rs 899",
+            "rating": 4.4,
+            "rating_source": "estimated",
+            "differentiators": "Cruelty-free, vegan-friendly, and eco-friendly packaging"
+          }
+        ],
+        "analysis": {
+          "comparison_basis": "Key ingredients, skin type, benefits, and price",
+          "comparison_summary": "The original product, HydraGlow Hyaluronic Acid Serum, is compared with three alternative products from Neutrogena, Lakme, and Plum. The alternatives offer similar key ingredients and benefits, but differ in terms of price, texture, and additional features.",
+          "feature_comparison": {
+            "HydraGlow Hyaluronic Acid Serum": {
+              "concentration": "2% Hyaluronic Acid",
+              "skin_type": [
+                "Dry",
+                "Sensitive"
+              ],
+              "key_ingredients": [
+                "Hyaluronic Acid",
+                "Vitamin B5"
+              ],
+              "benefits": [
+                "Deep hydration",
+                "Improves skin elasticity"
+              ]
+            },
+            "Neutrogena Hydro Boost Water Gel": {
+              "key_features": "Hyaluronic Acid, Vitamin E",
+              "skin_type": "All skin types",
+              "benefits": [
+                "Hydration",
+                "Smoothening"
+              ]
+            },
+            "Lakme 9 to 5 Hydrating Serum": {
+              "key_features": "Hyaluronic Acid, Glycerin",
+              "skin_type": "All skin types",
+              "benefits": [
+                "Hydration",
+                "Moisturization"
+              ]
+            },
+            "Plum Hyaluronic & Vitamin C Serum": {
+              "key_features": "Hyaluronic Acid, Vitamin C",
+              "skin_type": "All skin types",
+              "benefits": [
+                "Hydration",
+                "Brightening"
+              ]
+            }
+          },
+          "price_analysis": {
+            "price_range": "Rs 599 - Rs 899",
+            "cheapest_option": "Lakme 9 to 5 Hydrating Serum",
+            "most_expensive_option": "Plum Hyaluronic & Vitamin C Serum"
+          },
+          "recommendations": {
+            "for_dry_sensitive_skin": "HydraGlow Hyaluronic Acid Serum or Lakme 9 to 5 Hydrating Serum",
+            "for_all_skin_types": "Neutrogena Hydro Boost Water Gel or Plum Hyaluronic & Vitamin C Serum"
+          },
+          "best_value_pick": "Lakme 9 to 5 Hydrating Serum"
+        }
+      }
+    }
+  }
+}

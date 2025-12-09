@@ -1,0 +1,27 @@
+FAQ GENERATION TEMPLATE
+
+Generate 10 comprehensive FAQs covering:
+
+1. PRODUCT BASICS (2 questions)
+   - What is this product?
+   - Who should use it?
+
+2. USAGE & APPLICATION (2 questions)
+   - How to use?
+   - When to use?
+
+3. RESULTS & EFFECTIVENESS (2 questions)
+   - When will I see results?
+   - What results can I expect?
+
+4. SAFETY & SIDE EFFECTS (2 questions)
+   - Is it safe?
+   - Any side effects?
+
+5. COMPATIBILITY & STORAGE (2 questions)
+   - Can I use with other products?
+   - How to store?
+
+Format: JSON array with question-answer pairs
+Answers should be detailed (3-5 sentences each)
+Use current 2025 information and latest research

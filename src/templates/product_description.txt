@@ -1,0 +1,15 @@
+PRODUCT DESCRIPTION TEMPLATE
+
+Create a compelling product description that includes:
+
+1. TITLE: Catchy product name with key benefit
+2. OVERVIEW: 2-3 sentences highlighting what the product is and its primary purpose
+3. KEY BENEFITS: Bullet points of main benefits (4-6 points)
+4. INGREDIENTS: Highlight key active ingredients and their roles
+5. SUITABLE FOR: Target audience/skin type/use case
+6. HOW TO USE: Step-by-step usage instructions
+7. SAFETY & PRECAUTIONS: Important warnings or side effects
+8. WHY CHOOSE THIS: Unique selling points
+
+Tone: Professional, informative, persuasive
+Format: JSON with structured sections

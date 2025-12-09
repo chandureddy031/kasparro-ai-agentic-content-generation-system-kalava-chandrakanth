@@ -1,0 +1,31 @@
+{
+  "timestamp": "20251209_120945",
+  "product_name": "ClearTone Alpha Arbutin Serum",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "product_name": "ClearTone Alpha Arbutin Serum",
+      "concentration": "2% Alpha Arbutin",
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "key_ingredients": [
+        "Alpha Arbutin",
+        "Hyaluronic Acid"
+      ],
+      "benefits": [
+        "Reduces pigmentation",
+        "Evens skin tone"
+      ],
+      "how_to_use": "Use once daily in the evening",
+      "side_effects": "Patch test recommended",
+      "price_in_inr": 799
+    },
+    "comparison": {
+      "similar_products": [],
+      "comparison": {
+        "comparison": "```json\n{\n  \"comparison_summary\": \"The ClearTone Alpha Arbutin Serum is a popular product for reducing pigmentation and evening skin tone. However, there are alternative products in the market that offer similar benefits at varying prices. This comparison analysis will evaluate the original product against three alternative products: Olay Regenerist Micro-Sculpting Serum, Neutrogena Rapid Tone Repair Serum, and SkinCeuticals Phloretin CF Gel.\",\n  \"feature_comparison\": {\n    \"table\": [\n      {\n        \"Product Name & Brand\": \"ClearTone Alpha Arbutin Serum\",\n        \"Key Features\": \"2% Alpha Arbutin, Hyaluronic Acid\",\n        \"Price (INR)\": 799,\n        \"Rating\": 4.2,\n        \"Best For\": \"All Skin Types\"\n      },\n      {\n        \"Product Name & Brand\": \"Olay Regenerist Micro-Sculpting Serum\",\n        \"Key Features\": \"Amino-Peptide Complex, Vitamin B3\",\n        \"Price (INR)\": 1299,\n        \"Rating\": 4.5,\n        \"Best For\": \"Mature Skin\"\n      },\n      {\n        \"Product Name & Brand\": \"Neutrogena Rapid Tone Repair Serum\",\n        \"Key Features\": \"Vitamin E, Hyaluronic Acid\",\n        \"Price (INR)\": 599,\n        \"Rating\": 4.1,\n        \"Best For\": \"Sensitive Skin\"\n      },\n      {\n        \"Product Name & Brand\": \"SkinCeuticals Phloretin CF Gel\",\n        \"Key Features\": \"Phloretin, Ferulic Acid\",\n        \"Price (INR)\": 2499,\n        \"Rating\": 4.6,\n        \"Best For\": \"Acne-Prone Skin\"\n      }\n    ]\n  },\n  \"detailed_analysis\": {\n    \"ingredient_quality\": \"All products have high-quality ingredients, but SkinCeuticals Phloretin CF Gel stands out for its potent antioxidant blend.\",\n    \"effectiveness\": \"Olay Regenerist Micro-Sculpting Serum is highly effective for mature skin, while Neutrogena Rapid Tone Repair Serum is suitable for sensitive skin.\",\n    \"value_for_money\": \"ClearTone Alpha Arbutin Serum offers the best value for money, considering its price and key features.\",\n    \"brand_reputation\": \"All brands have a good reputation, but SkinCeuticals is known for its high-end, clinically-tested products.\"\n  },\n  \"price_analysis\": {\n    \"budget_option\": \"Neutrogena Rapid Tone Repair Serum (INR 599)\",\n    \"mid_range_option\": \"ClearTone Alpha Arbutin Serum (INR 799)\",\n    \"premium_option\": \"SkinCeuticals Phloretin CF Gel (INR 2499)\"\n  },\n  \"recommendations\": {\n    \"best_overall\": \"Olay Regenerist Micro-Sculpting Serum\",\n    \"best_value\": \"ClearTone Alpha Arbutin Serum\",\n    \"best_for_specific_needs\": {\n      \"sensitive_skin\": \"Neutrogena Rapid Tone Repair Serum\",\n      \"mature_skin\": \"Olay Regenerist Micro-Sculpting Serum\",\n      \"acne_prone_skin\": \"SkinCeuticals Phloretin CF Gel\"\n    }\n  },\n  \"best_value_pick\": \"ClearTone Alpha Arbutin Serum\"\n}\n```"
+      }
+    }
+  }
+}

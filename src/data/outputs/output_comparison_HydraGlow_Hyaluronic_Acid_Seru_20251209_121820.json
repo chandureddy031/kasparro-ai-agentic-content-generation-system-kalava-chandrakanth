@@ -1,0 +1,108 @@
+{
+  "timestamp": "20251209_121820",
+  "product_name": "HydraGlow Hyaluronic Acid Serum",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "product_name": "HydraGlow Hyaluronic Acid Serum",
+      "concentration": "2% Hyaluronic Acid",
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "key_ingredients": [
+        "Hyaluronic Acid",
+        "Vitamin B5"
+      ],
+      "benefits": [
+        "Deep hydration",
+        "Improves skin elasticity"
+      ],
+      "how_to_use": "Apply on damp skin twice daily",
+      "side_effects": "No major side effects",
+      "price_in_inr": 649
+    },
+    "comparison": {
+      "similar_products": [
+        {
+          "brand": "Lakme",
+          "product_name": "Lakme 9 To 5 Hyaluronic Acid Serum",
+          "key_features": "Hyaluronic Acid, Vitamin E, lightweight texture",
+          "price": "Rs 799",
+          "rating": 4.2,
+          "differentiators": "Oil-free and non-comedogenic"
+        },
+        {
+          "brand": "Mamaearth",
+          "product_name": "Mamaearth Hyaluronic Acid Serum",
+          "key_features": "Hyaluronic Acid, Vitamin B5, natural ingredients",
+          "price": "Rs 599",
+          "rating": 4.3,
+          "differentiators": "Toxin-free and cruelty-free"
+        },
+        {
+          "brand": "Pond's",
+          "product_name": "Pond's Hyaluronic Acid Serum",
+          "key_features": "Hyaluronic Acid, Glycerin, soothing properties",
+          "price": "Rs 899",
+          "rating": 4.1,
+          "differentiators": "Dermatologically tested and hypoallergenic"
+        }
+      ],
+      "comparison": {
+        "comparison_summary": "This comparison analysis evaluates the original HydraGlow Hyaluronic Acid Serum against three alternative products: Lakme 9 To 5 Hyaluronic Acid Serum, Mamaearth Hyaluronic Acid Serum, and Pond's Hyaluronic Acid Serum. The comparison assesses key features, pricing, and brand reputation to provide recommendations for the best overall, best value, and best for specific needs products.",
+        "feature_comparison": [
+          {
+            "product_name": "HydraGlow Hyaluronic Acid Serum",
+            "key_features": "2% Hyaluronic Acid, Vitamin B5",
+            "price": "Rs 649",
+            "rating": 4.5,
+            "best_for": "Dry and sensitive skin"
+          },
+          {
+            "product_name": "Lakme 9 To 5 Hyaluronic Acid Serum",
+            "key_features": "Hyaluronic Acid, Vitamin E, lightweight texture",
+            "price": "Rs 799",
+            "rating": 4.2,
+            "best_for": "Normal to oily skin"
+          },
+          {
+            "product_name": "Mamaearth Hyaluronic Acid Serum",
+            "key_features": "Hyaluronic Acid, Vitamin B5, natural ingredients",
+            "price": "Rs 599",
+            "rating": 4.3,
+            "best_for": "Sensitive skin and natural ingredient enthusiasts"
+          },
+          {
+            "product_name": "Pond's Hyaluronic Acid Serum",
+            "key_features": "Hyaluronic Acid, Glycerin, soothing properties",
+            "price": "Rs 899",
+            "rating": 4.1,
+            "best_for": "Dry and mature skin"
+          }
+        ],
+        "price_analysis": {
+          "budget_option": "Mamaearth Hyaluronic Acid Serum (Rs 599)",
+          "mid_range_option": "HydraGlow Hyaluronic Acid Serum (Rs 649)",
+          "premium_option": "Pond's Hyaluronic Acid Serum (Rs 899)"
+        },
+        "recommendations": {
+          "best_overall": "HydraGlow Hyaluronic Acid Serum",
+          "best_value": "Mamaearth Hyaluronic Acid Serum",
+          "best_for_specific_needs": {
+            "dry_and_sensitive_skin": "HydraGlow Hyaluronic Acid Serum",
+            "normal_to_oily_skin": "Lakme 9 To 5 Hyaluronic Acid Serum",
+            "natural_ingredient_enthusiasts": "Mamaearth Hyaluronic Acid Serum",
+            "mature_skin": "Pond's Hyaluronic Acid Serum"
+          }
+        },
+        "best_value_pick": {
+          "product_name": "Mamaearth Hyaluronic Acid Serum",
+          "price": "Rs 599",
+          "rating": 4.3,
+          "reason": " Offers a great balance of quality, natural ingredients, and affordability"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "product_data": {
+    "product_name": "GlowBoost Vitamin C Serum",
+    "concentration": "10% Vitamin C",
+    "skin_type": "Oily, Combination",
+    "key_ingredients": "Vitamin C, Hyaluronic Acid",
+    "benefits": "Brightening, Fades dark spots",
+    "how_to_use": "Apply 2-3 drops in the morning before sunscreen",
+    "side_effects": "Mild tingling for sensitive skin",
+    "price": "â‚¹699"
+  },
+  "comparison": {
+    "similar_products": [
+      {
+        "brand": "Neutrogena",
+        "product_name": "Rapid Wrinkle Repair Serum",
+        "key_features": "20% Vitamin C, Hyaluronic Acid, Retinol",
+        "price": "£49",
+        "rating": 4.2,
+        "differentiators": "Contains retinol for anti-aging, fragrance-free"
+      },
+      {
+        "brand": "Dr. Hauschka",
+        "product_name": "Vitalizing Vitamin C Serum",
+        "key_features": "12% Vitamin C, Jojoba Oil, Rose Petal Extract",
+        "price": "£69",
+        "rating": 4.5,
+        "differentiators": "Certified natural and organic ingredients, soothing scent"
+      },
+      {
+        "brand": "La Mer",
+        "product_name": "Concentrated Vitamin C Serum",
+        "key_features": "30% Vitamin C, Hyaluronic Acid, Miracle Broth",
+        "price": "£120",
+        "rating": 4.8,
+        "differentiators": "High concentration of vitamin C, proprietary Miracle Broth for intense hydration"
+      }
+    ],
+    "comparison": {
+      "comparison": "```\n{\n  \"comparison_summary\": \"This comparison analysis evaluates four vitamin C serums from different brands, including GlowBoost, Neutrogena, Dr. Hauschka, and La Mer. The products vary in terms of vitamin C concentration, key ingredients, price, and brand reputation.\",\n  \"feature_comparison\": {\n    \"table\": [\n      {\n        \"Product Name & Brand\": \"GlowBoost Vitamin C Serum\",\n        \"Key Features\": \"10% Vitamin C, Hyaluronic Acid\",\n        \"Price\": \"£69\",\n        \"Rating\": \"4.1\",\n        \"Best For\": \"Oily, Combination skin\"\n      },\n      {\n        \"Product Name & Brand\": \"Neutrogena Rapid Wrinkle Repair Serum\",\n        \"Key Features\": \"20% Vitamin C, Hyaluronic Acid, Retinol\",\n        \"Price\": \"£49\",\n        \"Rating\": \"4.2\",\n        \"Best For\": \"Anti-aging, sensitive skin\"\n      },\n      {\n        \"Product Name & Brand\": \"Dr. Hauschka Vitalizing Vitamin C Serum\",\n        \"Key Features\": \"12% Vitamin C, Jojoba Oil, Rose Petal Extract\",\n        \"Price\": \"£69\",\n        \"Rating\": \"4.5\",\n        \"Best For\": \"Natural and organic skin care\"\n      },\n      {\n        \"Product Name & Brand\": \"La Mer Concentrated Vitamin C Serum\",\n        \"Key Features\": \"30% Vitamin C, Hyaluronic Acid, Miracle Broth\",\n        \"Price\": \"£120\",\n        \"Rating\": \"4.8\",\n        \"Best For\": \"Intense hydration, high-end skin care\"\n      }\n    ]\n  },\n  \"price_analysis\": {\n    \"budget_option\": \"Neutrogena Rapid Wrinkle Repair Serum (£49)\",\n    \"mid_range_option\": \"GlowBoost Vitamin C Serum (£69) / Dr. Hauschka Vitalizing Vitamin C Serum (£69)\",\n    \"premium_option\": \"La Mer Concentrated Vitamin C Serum (£120)\"\n  },\n  \"recommendations\": {\n    \"best_overall\": \"La Mer Concentrated Vitamin C Serum\",\n    \"best_value\": \"Neutrogena Rapid Wrinkle Repair Serum\",\n    \"best_for_specific_needs\": {\n      \"oily_combination_skin\": \"GlowBoost Vitamin C Serum\",\n      \"sensitive_skin\": \"Neutrogena Rapid Wrinkle Repair Serum\",\n      \"natural_organic_skin_care\": \"Dr. Hauschka Vitalizing Vitamin C Serum\"\n    }\n  },\n  \"best_value_pick\": {\n    \"product\": \"Neutrogena Rapid Wrinkle Repair Serum\",\n    \"reason\": \"Offers a high concentration of vitamin C (20%) and retinol for anti-aging benefits at an affordable price (£49)\"\n  },\n  \"detailed_analysis\": {\n    \"ingredient_quality\": \"La Mer and Dr. Hauschka have high-quality, natural ingredients, while Neutrogena and GlowBoost have a mix of natural and synthetic ingredients.\",\n    \"effectiveness\": \"La Mer's high concentration of vitamin C (30%) and proprietary Miracle Broth make it the most effective product for intense hydration and brightening.\",\n    \"value_for_money\": \"Neutrogena offers the best value for money, considering its price and features.\",\n    \"brand_reputation\": \"La Mer and Dr. Hauschka have a strong reputation for natural and organic skin care, while Neutrogena is known for its affordable and effective products.\"\n  }\n}\n```"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+langgraph
+langchain
+langchain-core
+langchain-community
+python-multipart
+groq
+httpx
+flask
+groq
+requests

@@ -1,0 +1,173 @@
+{
+  "timestamp": "20251209_124427",
+  "product_name": "AquaShield Niacinamide Serum",
+  "operation": "comparison",
+  "results": {
+    "product_data": {
+      "product_name": "AquaShield Niacinamide Serum",
+      "concentration": "5% Niacinamide",
+      "skin_type": [
+        "Oily",
+        "Acne-Prone"
+      ],
+      "key_ingredients": [
+        "Niacinamide",
+        "Zinc PCA"
+      ],
+      "benefits": [
+        "Controls oil",
+        "Reduces acne marks",
+        "Minimizes pores"
+      ],
+      "how_to_use": "Apply 2–3 drops at night after cleansing",
+      "side_effects": "Slight dryness during initial use",
+      "price_in_inr": 599
+    },
+    "comparison": {
+      "similar_products": [
+        {
+          "brand": "Neutrogena",
+          "product_name": "Neutrogena Rapid Wrinkle Repair Serum",
+          "key_features": "Niacinamide, Hyaluronic Acid, and Vitamin E",
+          "price": "Rs 799",
+          "rating": 4.2,
+          "rating_source": "estimated",
+          "differentiators": "Contains hyaluronic acid for intense hydration"
+        },
+        {
+          "brand": "Plum",
+          "product_name": "Plum 10% Niacinamide Face Serum",
+          "key_features": "10% Niacinamide, Vitamin E, and Plant Extracts",
+          "price": "Rs 549",
+          "rating": 4.1,
+          "rating_source": "estimated",
+          "differentiators": "Vegan and cruelty-free, with a higher concentration of niacinamide"
+        },
+        {
+          "brand": "Lakme",
+          "product_name": "Lakme 9 To 5 Niacinamide Serum",
+          "key_features": "Niacinamide, Vitamin E, and Glycerin",
+          "price": "Rs 699",
+          "rating": 4.0,
+          "rating_source": "estimated",
+          "differentiators": "Affordable and easily accessible in the Indian market, with a focus on daily skincare routine"
+        }
+      ],
+      "comparison": {
+        "product_data": {
+          "product_name": "AquaShield Niacinamide Serum",
+          "concentration": "5% Niacinamide",
+          "skin_type": [
+            "Oily",
+            "Acne-Prone"
+          ],
+          "key_ingredients": [
+            "Niacinamide",
+            "Zinc PCA"
+          ],
+          "benefits": [
+            "Controls oil",
+            "Reduces acne marks",
+            "Minimizes pores"
+          ],
+          "how_to_use": "Apply 2–3 drops at night after cleansing",
+          "side_effects": "Slight dryness during initial use",
+          "price_in_inr": 599
+        },
+        "comparison_basis": {
+          "primary_factors": [
+            "Active ingredient type",
+            "Ingredient concentration",
+            "Skin type suitability",
+            "Price"
+          ],
+          "assumptions": [
+            "Ratings are estimated",
+            "Brand reputation inferred"
+          ]
+        },
+        "similar_products": [
+          {
+            "brand": "Neutrogena",
+            "product_name": "Neutrogena Rapid Wrinkle Repair Serum",
+            "key_features": "Niacinamide, Hyaluronic Acid, and Vitamin E",
+            "price": "Rs 799",
+            "rating": 4.2,
+            "rating_source": "estimated",
+            "differentiators": "Contains hyaluronic acid for intense hydration"
+          },
+          {
+            "brand": "Plum",
+            "product_name": "Plum 10% Niacinamide Face Serum",
+            "key_features": "10% Niacinamide, Vitamin E, and Plant Extracts",
+            "price": "Rs 549",
+            "rating": 4.1,
+            "rating_source": "estimated",
+            "differentiators": "Vegan and cruelty-free, with a higher concentration of niacinamide"
+          },
+          {
+            "brand": "Lakme",
+            "product_name": "Lakme 9 To 5 Niacinamide Serum",
+            "key_features": "Niacinamide, Vitamin E, and Glycerin",
+            "price": "Rs 699",
+            "rating": 4.0,
+            "rating_source": "estimated",
+            "differentiators": "Affordable and easily accessible in the Indian market, with a focus on daily skincare routine"
+          }
+        ],
+        "analysis": {
+          "comparison_basis": "The comparison is based on the key features, price, and ratings of the original product, AquaShield Niacinamide Serum, and the alternative products from Neutrogena, Plum, and Lakme.",
+          "comparison_summary": "The original product, AquaShield Niacinamide Serum, has a concentration of 5% Niacinamide and is suitable for oily and acne-prone skin. The alternative products have different concentrations of Niacinamide and additional key features such as Hyaluronic Acid, Vitamin E, and Plant Extracts.",
+          "feature_comparison": {
+            "AquaShield Niacinamide Serum": {
+              "concentration": "5% Niacinamide",
+              "skin_type": [
+                "Oily",
+                "Acne-Prone"
+              ],
+              "key_ingredients": [
+                "Niacinamide",
+                "Zinc PCA"
+              ]
+            },
+            "Neutrogena Rapid Wrinkle Repair Serum": {
+              "concentration": "Not specified",
+              "skin_type": "Not specified",
+              "key_ingredients": [
+                "Niacinamide",
+                "Hyaluronic Acid",
+                "Vitamin E"
+              ]
+            },
+            "Plum 10% Niacinamide Face Serum": {
+              "concentration": "10% Niacinamide",
+              "skin_type": "Not specified",
+              "key_ingredients": [
+                "Niacinamide",
+                "Vitamin E",
+                "Plant Extracts"
+              ]
+            },
+            "Lakme 9 To 5 Niacinamide Serum": {
+              "concentration": "Not specified",
+              "skin_type": "Not specified",
+              "key_ingredients": [
+                "Niacinamide",
+                "Vitamin E",
+                "Glycerin"
+              ]
+            }
+          },
+          "price_analysis": {
+            "AquaShield Niacinamide Serum": 599,
+            "Neutrogena Rapid Wrinkle Repair Serum": 799,
+            "Plum 10% Niacinamide Face Serum": 549,
+            "Lakme 9 To 5 Niacinamide Serum": 699
+          },
+          "recommendations": "Based on the comparison, the Plum 10% Niacinamide Face Serum is a good option for those looking for a higher concentration of Niacinamide and a vegan and cruelty-free product. The Neutrogena Rapid Wrinkle Repair Serum is a good option for those looking for a product with Hyaluronic Acid for intense hydration. The Lakme 9 To 5 Niacinamide Serum is a good option for those looking for an affordable and easily accessible product in the Indian market.",
+          "best_value_pick": "Plum 10% Niacinamide Face Serum"
+        }
+      }
+    }
+  }
+}

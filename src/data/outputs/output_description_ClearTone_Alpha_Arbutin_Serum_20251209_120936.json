@@ -1,0 +1,28 @@
+{
+  "timestamp": "20251209_120936",
+  "product_name": "ClearTone Alpha Arbutin Serum",
+  "operation": "description",
+  "results": {
+    "product_data": {
+      "product_name": "ClearTone Alpha Arbutin Serum",
+      "concentration": "2% Alpha Arbutin",
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "key_ingredients": [
+        "Alpha Arbutin",
+        "Hyaluronic Acid"
+      ],
+      "benefits": [
+        "Reduces pigmentation",
+        "Evens skin tone"
+      ],
+      "how_to_use": "Use once daily in the evening",
+      "side_effects": "Patch test recommended",
+      "price_in_inr": 799
+    },
+    "description": {
+      "description": "```json\n{\n  \"title\": \"ClearTone Alpha Arbutin Serum - Reduce Pigmentation and Even Skin Tone\",\n  \"description\": \"ClearTone Alpha Arbutin Serum is a potent skincare solution designed to reduce pigmentation and even out skin tone. With 2% Alpha Arbutin as its key ingredient, this serum works to inhibit melanin production, resulting in a brighter and more uniform complexion. Suitable for all skin types, it is perfect for those seeking a more radiant and balanced skin appearance.\",\n  \"highlights\": [\n    \"Reduces pigmentation and dark spots\",\n    \"Evens skin tone for a more uniform complexion\",\n    \"Hydrates the skin with Hyaluronic Acid\",\n    \"Suitable for all skin types\",\n    \"Contains 2% Alpha Arbutin for effective results\",\n    \"Affordable and priced at ₹799\"\n  ],\n  \"usage_instructions\": \"To use the ClearTone Alpha Arbutin Serum, apply a few drops to your face and neck in the evening, ideally once daily. It is recommended to patch test before starting regular use to ensure compatibility with your skin type.\"\n}\n```"
+    }
+  }
+}
