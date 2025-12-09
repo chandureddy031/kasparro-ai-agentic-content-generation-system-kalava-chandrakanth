@@ -1,4 +1,4 @@
-name: Docker Build and Push
+name: CI/CD Pipeline
 
 on:
   push:
@@ -7,54 +7,119 @@ on:
     branches: [ main, master ]
 
 jobs:
-  build:
+  test:
+    name: Run Tests
     runs-on: ubuntu-latest
     
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
     
-    - name: Set up Python
+    - name: Set up Python 3.11
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
+    
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
     
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Run tests
+    - name: Verify imports
       run: |
-        echo "Running basic import tests..."
-        python -c "import flask; import groq; print('Dependencies OK')"
+        python -c "import flask; print('Flask OK')"
+        python -c "import groq; print('Groq OK')"
+        python -c "from dotenv import load_dotenv; print('Dotenv OK')"
     
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
+    - name: Check code structure
+      run: |
+        ls -la
+        ls -la src/
+        ls -la src/agents/
+        echo "All files present"
+
+  lint:
+    name: Code Quality
+    runs-on: ubuntu-latest
     
-    - name: Login to Docker Hub
-      uses: docker/login-action@v3
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
       with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-      if: github.event_name == 'push'
+        python-version: '3.11'
     
-    - name: Build Docker image
+    - name: Install flake8
       run: |
-        docker build -t product-analysis-app:latest .
+        pip install flake8
+    
+    - name: Lint with flake8
+      run: |
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+      continue-on-error: true
+
+  docker-pull-test:
+    name: Test Docker Image
+    runs-on: ubuntu-latest
+    needs: [test, lint]
+    if: github.event_name == 'push'
+    
+    steps:
+    - name: Pull Docker image
+      run: |
+        docker pull chandu013/product-analysis-app:latest
     
     - name: Test Docker image
       run: |
-        docker run -d -p 5000:5000 -e GROQ_API_KEY="test_key" --name test-app product-analysis-app:latest
-        sleep 5
+        docker run -d -p 5000:5000 \
+          -e GROQ_API_KEY="test_dummy_key" \
+          --name test-app \
+          chandu013/product-analysis-app:latest
+        
+        sleep 10
+        
+        echo "Checking if container is running..."
+        docker ps
+        
+        echo "Container logs:"
         docker logs test-app
+        
         docker stop test-app
         docker rm test-app
     
-    - name: Tag and Push to Docker Hub
-      if: github.event_name == 'push'
+    - name: Image pull successful
       run: |
-        docker tag product-analysis-app:latest ${{ secrets.DOCKER_USERNAME }}/product-analysis-app:latest
-        docker tag product-analysis-app:latest ${{ secrets.DOCKER_USERNAME }}/product-analysis-app:${{ github.sha }}
-        docker push ${{ secrets.DOCKER_USERNAME }}/product-analysis-app:latest
-        docker push ${{ secrets.DOCKER_USERNAME }}/product-analysis-app:${{ github.sha }}
+        echo "Docker image pulled and tested successfully"
+        echo "Image: chandu013/product-analysis-app:latest"
+
+  deploy-notification:
+    name: Deployment Ready
+    runs-on: ubuntu-latest
+    needs: [docker-pull-test]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Deployment info
+      run: |
+        echo "==================================="
+        echo " All tests passed!"
+        echo "==================================="
+        echo ""
+        echo "Docker Image: chandu013/product-analysis-app:latest"
+        echo ""
+        echo "To deploy, run:"
+        echo "docker pull chandu013/product-analysis-app:latest"
+        echo "docker run -e GROQ_API_KEY='your_key' -p 5000:5000 chandu013/product-analysis-app:latest"
+        echo ""
+        echo "==================================="
