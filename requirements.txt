@@ -1,12 +1,10 @@
-fastapi
-uvicorn
-pydantic
 langgraph
 langchain
 langchain-core
 langchain-community
-python-multipart
+langchain-groq
+pydantic
+python-dotenv
 groq
-httpx
+tenacity
 flask
-requests

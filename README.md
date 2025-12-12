@@ -1,4 +1,4 @@
-# 🤖 Multi-Agent Product Analysis System
+# 🤖 Multi-Agent Product Analysis System (LangGraph)
 
 
     Running application : https://product-analysis-app-latest.onrender.com
@@ -6,7 +6,7 @@
 
 
 
-A powerful AI-driven product analysis platform using multi-agent architecture with LangGraph-style orchestration and Groq LLM integration.
+A powerful AI-driven product analysis platform using **LangGraph** for orchestration and Groq LLM integration.
 
 ![System Architecture](img-kasparrow.png)
 
@@ -16,32 +16,81 @@ A powerful AI-driven product analysis platform using multi-agent architecture wi
 
 ## 🌟 Features
 
-- **Multi-Agent Architecture**: Three specialized agents working in orchestrated workflow
-  - **Parser Agent**: Extracts and structures product data
-  - **Similar Product Agent**: Finds and compares market alternatives
-  - **FAQ Agent**: Generates 10 detailed frequently asked questions
+- **LangGraph-Based Architecture**: Industry-standard orchestration using StateGraph
+  - **Parser Node**: Extracts and validates product data with Pydantic
+  - **Comparison Node**: Finds and compares 3 market alternatives
+  - **FAQ Node**: Generates **minimum 15 categorized FAQs** (enforced by schema)
+  - **Description Node**: Creates marketing-ready product descriptions
 
-- **Graph-Based Orchestration**: LangGraph-inspired node execution with dynamic routing
+- **Structured Output**: Pydantic models ensure type-safe, validated outputs
 
-- **Dual Output Modes**: 
-  - Beautiful UI with side-by-side comparison cards
-  - JSON output for technical inspection
+- **Robust Error Handling**: 
+  - Exponential backoff retry logic for API calls
+  - Proper logging instead of silent failures
+  - Fallback mechanisms for critical operations
 
-- **Real-time Analysis**: Uses Groq's latest LLM (llama-3.3-70b-versatile) for accurate results
+- **Configurable**: Environment variables for model selection, temperature, and tokens
 
-- **Data Persistence**: Automatic storage of inputs, outputs, and execution history
+- **15+ FAQs with Categories**: 
+  - Informational (3+)
+  - Safety (3+)
+  - Usage (3+)
+  - Purchase (3+)
+  - Comparison (3+)
 
-## 🏗️ System Architecture
+## 🏗️ LangGraph Architecture
 
+```
+Entry → Parser Node (Always)
+         ↓
+         ├→ Description Node (Optional)
+         ├→ Comparison Node (Optional)
+         └→ FAQ Node (Optional - Min 15 FAQs)
+         ↓
+         End
+```
 
-## 🚀 Quick Start with Docker
+**Key Components:**
+- `StateGraph`: Orchestrates agent execution
+- `AgentState`: TypedDict for type-safe state management
+- Conditional routing based on requested operations
+- Pydantic validation at every step
+
+## 🚀 Quick Start
 
 ### Prerequisites
-- Docker installed on your system
+- Python 3.10+ or Docker
 - Groq API Key ([Get it here](#getting-groq-api-key))
 
-### Pull and Run
+### Using CLI (Recommended)
 
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+2. Set environment variables:
+```bash
+export GROQ_API_KEY='your_api_key_here'
+```
+
+3. Run with sample data:
+```bash
+cd src
+python main.py --sample --operations=faq
+```
+
+4. Run with custom data:
+```bash
+python main.py --input=/path/to/product.json --operations=description,comparison,faq
+```
+
+### Using Docker
+
+```bash
+docker build -t product-analysis .
+docker run -e GROQ_API_KEY='your_key' -p 5000:5000 product-analysis
+```
 
 ### Access the Application
 
@@ -94,11 +143,59 @@ Actions: Install dependencies, run tests, pull Docker image
 
 ## 🛠️ Tech Stack
 
-- **Backend**: Flask, Python 3.11
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript
-- **LLM**: Groq (llama-3.3-70b-versatile)
-- **Orchestration**: Custom Graph-based Agent Workflow
+- **Backend**: Python 3.10+
+- **Orchestration**: **LangGraph** (official LangChain framework)
+- **LLM**: Groq (llama-3.3-70b-versatile, configurable)
+- **Validation**: Pydantic 2.x for structured outputs
+- **Web Server**: Flask (optional - CLI is primary interface)
+- **Retry Logic**: Tenacity for exponential backoff
 - **Containerization**: Docker
+
+## 📋 Environment Variables
+
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| `GROQ_API_KEY` | ✅ Yes | None | Groq API key for LLM access |
+| `MODEL_NAME` | No | `llama-3.3-70b-versatile` | Groq model to use |
+| `TEMPERATURE` | No | `0.7` | LLM sampling temperature |
+| `MAX_TOKENS` | No | `2048` | Maximum tokens per response |
+
+## 🧪 Testing
+
+Run the included tests to validate the system:
+
+```bash
+# Test Pydantic models
+python tests/test_models.py
+
+# Test LangGraph workflow
+python tests/test_workflow.py
+```
+
+**Key Tests:**
+- ✅ FAQPage enforces minimum 15 FAQs
+- ✅ Workflow compilation succeeds
+- ✅ Conditional routing works correctly
+- ✅ All Pydantic models validate properly
+
+## 📊 Output Examples
+
+### FAQ Output (15+ with Categories)
+```json
+{
+  "faqs": [
+    {
+      "question": "What is this product?",
+      "answer": "Detailed answer...",
+      "category": "Informational"
+    },
+    // ... minimum 15 total
+  ]
+}
+```
+
+### Validation Guarantee
+The system **cannot** return fewer than 15 FAQs due to Pydantic's `min_length=15` constraint on the `FAQPage` model.
 - **CI/CD**: GitHub Actions
 
 ## 📝 API Endpoints
