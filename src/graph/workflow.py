@@ -3,7 +3,7 @@
 This module defines the StateGraph that orchestrates all agents using LangGraph.
 """
 import logging
-from typing import List
+from typing import List, Literal
 from langgraph.graph import StateGraph, END
 
 from models.state import AgentState
@@ -12,8 +12,8 @@ from graph.nodes import parser_node, description_node, faq_node, comparison_node
 logger = logging.getLogger(__name__)
 
 
-def should_run_description(state: AgentState) -> str:
-    """Conditional edge: check if description should run.
+def route_after_parser(state: AgentState) -> Literal["description", "comparison", "faq", "__end__"]:
+    """Route from parser to the first requested operation.
     
     Args:
         state: Current agent state
@@ -24,11 +24,15 @@ def should_run_description(state: AgentState) -> str:
     operations = state.get('operations', [])
     if 'description' in operations:
         return 'description'
-    return 'check_comparison'
+    elif 'comparison' in operations:
+        return 'comparison'
+    elif 'faq' in operations:
+        return 'faq'
+    return END
 
 
-def should_run_comparison(state: AgentState) -> str:
-    """Conditional edge: check if comparison should run.
+def route_after_description(state: AgentState) -> Literal["comparison", "faq", "__end__"]:
+    """Route from description to next operation.
     
     Args:
         state: Current agent state
@@ -39,11 +43,13 @@ def should_run_comparison(state: AgentState) -> str:
     operations = state.get('operations', [])
     if 'comparison' in operations:
         return 'comparison'
-    return 'check_faq'
+    elif 'faq' in operations:
+        return 'faq'
+    return END
 
 
-def should_run_faq(state: AgentState) -> str:
-    """Conditional edge: check if FAQ should run.
+def route_after_comparison(state: AgentState) -> Literal["faq", "__end__"]:
+    """Route from comparison to FAQ or END.
     
     Args:
         state: Current agent state
@@ -78,38 +84,35 @@ def create_workflow() -> StateGraph:
     # Add conditional edges from parser
     workflow.add_conditional_edges(
         "parser",
-        should_run_description,
+        route_after_parser,
         {
             "description": "description",
-            "check_comparison": "check_comparison"
-        }
-    )
-    
-    # Add check_comparison as a conditional node
-    workflow.add_conditional_edges(
-        "check_comparison",
-        should_run_comparison,
-        {
             "comparison": "comparison",
-            "check_faq": "check_faq"
-        }
-    )
-    
-    # Add check_faq as a conditional node
-    workflow.add_conditional_edges(
-        "check_faq",
-        should_run_faq,
-        {
             "faq": "faq",
             END: END
         }
     )
     
-    # Connect description -> check_comparison
-    workflow.add_edge("description", "check_comparison")
+    # Add conditional edges from description
+    workflow.add_conditional_edges(
+        "description",
+        route_after_description,
+        {
+            "comparison": "comparison",
+            "faq": "faq",
+            END: END
+        }
+    )
     
-    # Connect comparison -> check_faq
-    workflow.add_edge("comparison", "check_faq")
+    # Add conditional edges from comparison
+    workflow.add_conditional_edges(
+        "comparison",
+        route_after_comparison,
+        {
+            "faq": "faq",
+            END: END
+        }
+    )
     
     # Connect faq -> END
     workflow.add_edge("faq", END)
