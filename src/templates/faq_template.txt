@@ -9,12 +9,12 @@ CATEGORIES (must use these exact categories):
 4. Purchase - Pricing, availability, value
 5. Comparison - Vs other products, alternatives
 
-DISTRIBUTION (minimum):
-- Informational: 3 questions
-- Safety: 3 questions  
-- Usage: 3 questions
-- Purchase: 3 questions
-- Comparison: 3 questions
+DISTRIBUTION (minimum - generate more if appropriate):
+- Informational: at least 3 questions
+- Safety: at least 3 questions  
+- Usage: at least 3 questions
+- Purchase: at least 3 questions
+- Comparison: at least 3 questions
 
 QUESTION AREAS TO COVER:
 1. INFORMATIONAL

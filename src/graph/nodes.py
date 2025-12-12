@@ -4,6 +4,7 @@ These functions transform the AgentState and are used as nodes in the LangGraph 
 """
 import json
 import logging
+import os
 from typing import Dict, Any
 
 from models.state import AgentState
@@ -11,6 +12,26 @@ from models.outputs import ParsedProduct, ProductDescription, FAQPage, ProductCo
 from llm_client import LLMClient
 
 logger = logging.getLogger(__name__)
+
+
+def _load_template(template_name: str) -> str:
+    """Load a template file from the templates directory.
+    
+    Args:
+        template_name: Name of template file (e.g., 'faq_template.txt')
+        
+    Returns:
+        Template content or default message
+    """
+    current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    template_path = os.path.join(current_dir, 'templates', template_name)
+    
+    try:
+        with open(template_path, 'r') as f:
+            return f.read()
+    except Exception as e:
+        logger.warning(f"Could not load template {template_name}: {e}")
+        return f"Generate output for {template_name.replace('_template.txt', '')}"
 
 
 def parser_node(state: AgentState) -> AgentState:
@@ -34,7 +55,7 @@ def parser_node(state: AgentState) -> AgentState:
             state['parsed_data'] = parsed.model_dump()
             return state
         except Exception as e:
-            logger.warning(f"Dict validation failed, will parse: {e}")
+            logger.warning(f"Dict validation failed: {type(e).__name__}: {str(e)}, will parse as text")
     
     # Parse text input
     prompt = f"""Extract product information from text and return as JSON:
@@ -72,16 +93,7 @@ def description_node(state: AgentState) -> AgentState:
     parsed_data = state.get('parsed_data', {})
     
     # Load template
-    import os
-    current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    template_path = os.path.join(current_dir, 'templates', 'product_description.txt')
-    
-    try:
-        with open(template_path, 'r') as f:
-            template = f.read()
-    except Exception as e:
-        logger.warning(f"Could not load template: {e}")
-        template = "Create a professional product description."
+    template = _load_template('product_description.txt')
     
     prompt = f"""Using template and product data, create product description:
 
@@ -125,16 +137,7 @@ def faq_node(state: AgentState) -> AgentState:
     parsed_data = state.get('parsed_data', {})
     
     # Load template
-    import os
-    current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    template_path = os.path.join(current_dir, 'templates', 'faq_template.txt')
-    
-    try:
-        with open(template_path, 'r') as f:
-            template = f.read()
-    except Exception as e:
-        logger.warning(f"Could not load template: {e}")
-        template = "Generate comprehensive FAQs with categories."
+    template = _load_template('faq_template.txt')
     
     prompt = f"""Create MINIMUM 15 FAQs for this product with categories:
 
@@ -231,15 +234,7 @@ JSON FORMAT (return array of 3 objects):
         state['similar_products'] = similar_products
     
     # Step 2: Compare products
-    import os
-    current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    template_path = os.path.join(current_dir, 'templates', 'comparison_template.txt')
-    
-    try:
-        with open(template_path, 'r') as f:
-            template = f.read()
-    except Exception:
-        template = "Compare products based on features and price."
+    template = _load_template('comparison_template.txt')
     
     comparison_prompt = f"""
 Compare the ORIGINAL product with the ALTERNATIVE products.
